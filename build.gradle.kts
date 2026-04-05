@@ -3,8 +3,8 @@ plugins {
     id("hytale-mod") version "0.+"
 }
 
-group = "com.example"
-version = "0.1.0"
+group = "com.Adathan"
+version = "1.0.0"
 val javaVersion = 25
 
 repositories {
@@ -17,6 +17,7 @@ repositories {
 dependencies {
     compileOnly(libs.jetbrains.annotations)
     compileOnly(libs.jspecify)
+    runtimeOnly("com.Adathan:AdathansBossLibrary:1.+")
 }
 
 hytale {
