@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Adathan_Generic_Spell_Cast",
+      "PositionOffset": {
+        "Y": 1
+      }
+    }
+  ]
+}

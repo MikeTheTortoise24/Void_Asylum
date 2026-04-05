@@ -1,0 +1,17 @@
+{
+  "Duration": 5,
+  "OverlapBehavior": "Overwrite",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#1c0332",
+    "EntityTopTint": "#9f05dd",
+    "ScreenEffect": "ScreenEffects/Sand.png"
+  },
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Fire": 3
+    }
+  },
+  "DamageCalculatorCooldown": 1.6,
+  "Debuff": true,
+  "StatusEffectIcon": "Icons/Processing/FuelSlotIcon.png"
+}

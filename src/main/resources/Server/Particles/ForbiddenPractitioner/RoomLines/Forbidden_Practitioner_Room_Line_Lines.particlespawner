@@ -1,0 +1,51 @@
+{
+  "RenderMode": "BlendAdd",
+  "MaxConcurrentParticles": 1000,
+  "ParticleLifeSpan": {
+    "Min": 0.75,
+    "Max": 0.75
+  },
+  "SpawnRate": {
+    "Min": 40,
+    "Max": 40
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Gradient_Reflected_Inv.png",
+    "Animation": {
+      "0": {
+        "Opacity": 1
+      },
+      "30": {},
+      "60": {},
+      "100": {
+        "Opacity": 0.4
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 0.4,
+      "Color": "#9d02bf",
+      "Scale": {
+        "X": {
+          "Min": 3.8,
+          "Max": 3.8
+        }
+      },
+      "Rotation": {
+        "X": {
+          "Min": 90,
+          "Max": 90
+        }
+      }
+    }
+  },
+  "LifeSpan": 3,
+  "Shape": "Cube",
+  "LinearFiltering": true,
+  "ParticleRotateWithSpawner": true,
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 20,
+      "Max": 20
+    }
+  }
+}

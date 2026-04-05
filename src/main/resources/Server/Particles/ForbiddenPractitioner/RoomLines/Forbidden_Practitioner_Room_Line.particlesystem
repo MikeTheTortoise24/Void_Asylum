@@ -1,0 +1,27 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Line_Lines",
+      "PositionOffset": {
+        "Y": 0.5
+      }
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Line_Lines",
+      "PositionOffset": {
+        "Y": 0.5
+      },
+      "RotationOffset": {
+        "Yaw": 180
+      }
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Lines_Center",
+      "PositionOffset": {
+        "Y": 0.5
+      }
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 1000
+}

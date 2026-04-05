@@ -1,0 +1,46 @@
+{
+  "Type": "DamageEntity",
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Elemental": 20
+    }
+  },
+  "Effects": {
+    "CameraEffect": "Impact_Strong"
+  },
+  "DamageEffects": {
+    "WorldSoundEventId": "SFX_Poop_Hit",
+    "WorldParticles": [
+      {
+        "SystemId": "VoidImpact"
+      }
+    ],
+    "StaminaDrainMultiplier": 2,
+    "CameraEffect": "Impact_Light"
+  },
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "Red_Flash",
+        "Entity": "Target"
+      },
+      {
+        "Type": "ClearEntityEffect",
+        "Entity": "Target",
+        "EntityEffectId": "Potion_Health_Lesser_Regen"
+      },
+      {
+        "Type": "ClearEntityEffect",
+        "Entity": "Target",
+        "EntityEffectId": "Potion_Health_Greater_Regen"
+      },
+      {
+        "Type": "ClearEntityEffect",
+        "Entity": "Target",
+        "EntityEffectId": "Potion_Stamina_Regen"
+      }
+    ]
+  }
+}

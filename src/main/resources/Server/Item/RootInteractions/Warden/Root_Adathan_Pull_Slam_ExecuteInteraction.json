@@ -1,0 +1,70 @@
+{
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.05
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.9,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "Particles": [
+          {
+            "TargetEntityPart": "Entity",
+            "SystemId": "Warden_Pull_Slam",
+            "RotationOffset": {
+              "Yaw": 180
+            }
+          },
+          {
+            "TargetEntityPart": "Entity",
+            "SystemId": "Warden_Pull_Slam",
+            "RotationOffset": {
+              "Yaw": 155
+            }
+          },
+          {
+            "TargetEntityPart": "Entity",
+            "SystemId": "Warden_Pull_Slam",
+            "RotationOffset": {
+              "Yaw": 205
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "Horizontal",
+        "Length": 70,
+        "Direction": "ToRight",
+        "EndDistance": 12,
+        "ExtendTop": 2,
+        "ExtendBottom": 2,
+        "YawStartOffset": -40
+      },
+      "RunTime": 0.1,
+      "HitEntity": {
+        "Interactions": [
+          "Adathan_Warden_Pull_Force"
+        ]
+      },
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.25
+    },
+    {
+      "Type": "RemoveEntity"
+    }
+  ]
+}

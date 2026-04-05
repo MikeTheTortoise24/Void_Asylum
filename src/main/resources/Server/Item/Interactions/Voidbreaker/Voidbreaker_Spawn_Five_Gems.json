@@ -1,0 +1,17 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "SetBlocksAroundCircle",
+      "BlockName": "Void_Stone",
+      "NumberOfBlocks": 7,
+      "AnchorX": 0,
+      "AnchorY": 102,
+      "AnchorZ": -146,
+      "Radius": 17,
+      "Effects": {
+        "WorldSoundEventId": "SFX_Golem_Firesteel_Alerted_01"
+      }
+    }
+  ]
+}

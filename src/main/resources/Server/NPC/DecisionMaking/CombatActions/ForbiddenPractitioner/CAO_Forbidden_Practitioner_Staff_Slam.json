@@ -1,0 +1,43 @@
+{
+  "Type": "Ability",
+  "Description": "Slam an AOE of 4 radius around the boss with his staff.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Default",
+        "ResponseCurve": "Linear",
+        "XRange": [
+          0,
+          30
+        ]
+      }
+    },
+    {
+      "Type": "TargetDistance",
+      "Curve": {
+        "XRange": [
+          2,
+          25
+        ],
+        "ResponseCurve": "ReverseLinear"
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "AttackDistanceRange": [
+    0,
+    6
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    8,
+    10
+  ],
+  "SubState": "Default",
+  "Ability": {
+    "Interactions": [
+      "Forbidden_Practitioner_Staff_Slam"
+    ]
+  }
+}

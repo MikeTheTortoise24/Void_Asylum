@@ -1,0 +1,107 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Golem_Crystal_Earth_Default",
+    "ItemAnimationId": "Spin",
+    "Particles": [
+      {
+        "RotationOffset": {
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 0
+        },
+        "TargetNodeName": "Handle",
+        "SystemId": "Warden_Weapon_Charge",
+        "PositionOffset": {
+          "X": 0,
+          "Y": 0
+        },
+        "Scale": 2
+      },
+      {
+        "SystemId": "Warden_Spin_KB_Circle",
+        "DetachedFromModel": true,
+        "TargetEntityPart": "Entity",
+        "Scale": 1.3,
+        "PositionOffset": {
+          "Y": 0.1
+        }
+      },
+      {
+        "SystemId": "Warden_Random_AOE_Start",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Hip",
+        "Scale": 5,
+        "RotationOffset": {
+          "Roll": -90
+        }
+      }
+    ],
+    "MovementEffects": {
+      "DisableAll": true
+    },
+    "WorldSoundEventId": "SFX_Bow_T2_Signature_Nock"
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 0.717,
+  "Next": {
+    "Type": "Parallel",
+    "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "$Comment": "Length of Combat",
+            "RunTime": 0.4,
+            "Selector": {
+              "Id": "Horizontal",
+              "Direction": "ToLeft",
+              "TestLineOfSight": true,
+              "ExtendTop": -1,
+              "ExtendBottom": 2,
+              "StartDistance": 0.5,
+              "EndDistance": 6,
+              "Length": 360,
+              "RollOffset": 0,
+              "YawStartOffset": -50
+            },
+            "HitEntity": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "DefaultValue": {
+                    "Interactions": [
+                      "Adathan_Warden_Spin_KB_Damage"
+                    ]
+                  },
+                  "Var": "Melee_Damage"
+                }
+              ]
+            },
+            "Effects": {
+              "MovementEffects": {
+                "DisableAll": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "$Comment": "Length of Effect",
+            "RunTime": 0.617,
+            "Effects": {
+              "WorldSoundEventId": "SFX_Battleaxe_T2_Swing_Charged",
+              "MovementEffects": {
+                "DisableAll": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

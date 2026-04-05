@@ -1,0 +1,8 @@
+{
+  "BossBar": {
+    "DisplayName": "Keyholder",
+    "NameColor": "#eeeeee",
+    "ShowRadius": 10.0,
+    "HideRadius": 20.0
+  }
+}

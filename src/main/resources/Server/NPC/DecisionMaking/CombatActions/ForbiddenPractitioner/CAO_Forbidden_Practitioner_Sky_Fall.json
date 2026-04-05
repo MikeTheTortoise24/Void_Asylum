@@ -1,0 +1,90 @@
+{
+  "Type": "Ability",
+  "Description": "Summon crystals from the sky in patterns that change every time this ability is called.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Default",
+        "ResponseCurve": "Linear",
+        "XRange": [
+          0,
+          45
+        ]
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 2500,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 1.5,
+  "AttackDistanceRange": [
+    0,
+    30
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    8,
+    10
+  ],
+  "SubState": "Default",
+  "Ability": {
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "RunTime": 1.0,
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "ItemPlayerAnimationsId": "Staff",
+          "ItemAnimationId": "CastSummonCharging",
+          "Particles": [
+            {
+              "SystemId": "Adathan_Generic_Spell_Cast",
+              "TargetEntityPart": "Entity",
+              "Color": "#ff0000",
+              "Scale": 0.5
+            }
+          ],
+          "WorldSoundEventId": "SFX_Sky_Fall_Start"
+        }
+      },
+      {
+        "Type": "Simple",
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "ItemPlayerAnimationsId": "Staff",
+          "ItemAnimationId": "CastSummonCharged"
+        },
+        "RunTime": 0.5
+      },
+      {
+        "Type": "ExecuteInteraction",
+        "RootInteractionName": "Root_Forbidden_Practitioner_Sky_Fall_Chain",
+        "EntityName": "Boss_Marker_Platform",
+        "Range": 30,
+        "Count": 1
+      },
+      {
+        "Type": "Simple",
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          }
+        },
+        "RunTime": 3.0
+      }
+    ]
+  }
+}

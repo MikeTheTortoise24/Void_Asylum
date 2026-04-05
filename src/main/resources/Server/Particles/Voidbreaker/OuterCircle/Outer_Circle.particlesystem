@@ -1,0 +1,18 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Outer_Circle_AOE",
+      "PositionOffset": {
+        "Y": 0.9
+      }
+    },
+    {
+      "SpawnerId": "Outer_Circle_Inner_Circle",
+      "PositionOffset": {
+        "Y": 0.9
+      }
+    }
+  ],
+  "BoundingRadius": 100,
+  "IsImportant": true
+}

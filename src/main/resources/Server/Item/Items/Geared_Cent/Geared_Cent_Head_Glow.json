@@ -1,0 +1,68 @@
+{
+  "TranslationProperties": {
+    "Name": "Energized Centurion Helm"
+  },
+  "Parent": "Armor_Iron_Head",
+  "ItemLevel": 28,
+  "Icon": "Icons/ItemsGenerated/Geared_Cent_Head_Glow.png",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      29.815,
+      41.065,
+      15.19
+    ],
+    "Translation": [
+      2,
+      2
+    ]
+  },
+  "Model": "Items/Armor/GearedCent/DwarvenArmor_Head.blockymodel",
+  "Texture": "Items/Armor/GearedCent/GearedCent_Head_Texture_Glow.png",
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "EarAccessory",
+      "Ear",
+      "Haircut",
+      "HeadAccessory"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.05,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.05,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 12,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Bronze"
+    ],
+    "SubType": [
+      "Planks"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "Quality": "Developer"
+}

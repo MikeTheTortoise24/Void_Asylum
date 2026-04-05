@@ -1,0 +1,48 @@
+{
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Spear_Begin",
+            "TargetEntityPart": "Entity"
+          }
+        ],
+        "WorldSoundEventId": "Void_Dragon_Spear"
+      },
+      "RunTime": 2.3,
+      "ViewDistance": 500
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.2,
+      "Effects": {
+        "WorldSoundEventId": "Void_Dragon_Spear_Explosion"
+      },
+      "ViewDistance": 500
+    },
+    {
+      "Type": "Projectile",
+      "Config": "Adathan_Void_Dragon_Spear_Projectile",
+      "ViewDistance": 200
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "Stab",
+        "EndDistance": 100,
+        "ExtendTop": 4,
+        "ExtendBottom": 4,
+        "ExtendLeft": 4,
+        "ExtendRight": 4
+      },
+      "RunTime": 0.5,
+      "HitEntity": {
+        "Interactions": [
+          "Adathan_Void_Dragon_Spear_Damage"
+        ]
+      }
+    }
+  ]
+}

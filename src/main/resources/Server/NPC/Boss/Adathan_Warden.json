@@ -1,0 +1,8 @@
+{
+  "BossBar": {
+    "DisplayName": "The Warden",
+    "NameColor": "#eeeeee",
+    "ShowRadius": 20.0,
+    "HideRadius": 30.0
+  }
+}

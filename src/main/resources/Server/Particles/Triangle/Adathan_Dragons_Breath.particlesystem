@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Dragons_Breath_Main"
+    }
+  ],
+  "CullDistance": 1000,
+  "IsImportant": true,
+  "BoundingRadius": 1000
+}

@@ -1,0 +1,68 @@
+{
+  "Tags": {
+    "Attack": [
+      "Ranged"
+    ]
+  },
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 1.0,
+      "Effects": {
+        "ItemPlayerAnimationsId": "Staff",
+        "ItemAnimationId": "CastSummonCharging",
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "Particles": [
+          {
+            "SystemId": "Adathan_Generic_Spell_Cast",
+            "TargetEntityPart": "Entity",
+            "Color": "#500c6e",
+            "Scale": 0.5
+          }
+        ],
+        "WorldSoundEventId": "SFX_Forbidden_Practitioner_AOE_Lob_Start"
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.5,
+      "Effects": {
+        "ItemPlayerAnimationsId": "Staff",
+        "ItemAnimationId": "CastSummonCharged",
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    },
+    {
+      "Type": "Serial",
+      "Interactions": [
+        {
+          "Type": "FireProjectilesSetIntervals",
+          "Count": 5,
+          "OffsetFromCenter": 0.1,
+          "ProjectileConfigName": "Forbidden_Practitioner_AOE_Lob_Projectile_Base",
+          "AngledAwayFromMiddle": true
+        },
+        {
+          "Type": "FireProjectilesSetIntervals",
+          "Count": 12,
+          "OffsetFromCenter": 0.1,
+          "ProjectileConfigName": "Forbidden_Practitioner_AOE_Lob_Projectile_Base_Far",
+          "AngledAwayFromMiddle": true
+        }
+      ]
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.5,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    }
+  ]
+}

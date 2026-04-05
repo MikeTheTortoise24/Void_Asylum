@@ -1,0 +1,8 @@
+{
+  "BossBar": {
+    "DisplayName": "Forbidden Practitioner",
+    "NameColor": "#eeeeee",
+    "ShowRadius": 25.0,
+    "HideRadius": 35.0
+  }
+}

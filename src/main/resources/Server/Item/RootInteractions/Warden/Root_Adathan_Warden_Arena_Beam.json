@@ -1,0 +1,71 @@
+{
+  "Interactions": [
+    "Adathan_Warden_Arena_Beam",
+    {
+      "Type": "Parallel",
+      "Interactions": [
+        {
+          "Interactions": [
+            {
+              "Type": "Repeat",
+              "ForkInteractions": {
+                "Interactions": [
+                  {
+                    "Type": "RotateSelf",
+                    "RotationY": 2
+                  }
+                ]
+              },
+              "Repeat": 540
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "RunTime": 1.0
+            },
+            {
+              "Type": "Repeat",
+              "ForkInteractions": {
+                "Interactions": [
+                  {
+                    "Type": "Selector",
+                    "Selector": {
+                      "Id": "Stab",
+                      "StartDistance": -20,
+                      "EndDistance": 20,
+                      "ExtendLeft": 2,
+                      "ExtendRight": 2
+                    },
+                    "HitEntityRules": [
+                      {
+                        "Matchers": [
+                          {
+                            "Type": "Player"
+                          }
+                        ],
+                        "Next": {
+                          "Interactions": [
+                            "Adathan_Warden_Arena_Beam_Damage"
+                          ]
+                        }
+                      }
+                    ],
+                    "RunTime": 0.05
+                  },
+                  {
+                    "Type": "Simple",
+                    "RunTime": 0.2
+                  }
+                ]
+              },
+              "Repeat": 44
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

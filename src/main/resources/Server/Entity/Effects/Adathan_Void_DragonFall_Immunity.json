@@ -1,0 +1,13 @@
+{
+  "Duration": 10,
+  "DamageResistance": {
+    "Fall": [
+      {
+        "Amount": 1,
+        "CalculationType": "Multiplicative"
+      }
+    ]
+  },
+  "StatusEffectIcon": "Icons/ItemsGenerated/Armor_Prisma_Legs.png",
+  "OverlapBehavior": "Overwrite"
+}

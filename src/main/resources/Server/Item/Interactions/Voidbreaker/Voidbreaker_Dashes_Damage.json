@@ -1,0 +1,25 @@
+{
+  "Parent": "DamageEntityParent",
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Physical": 15
+    }
+  },
+  "Effects": {
+    "CameraEffect": "Impact_Strong"
+  },
+  "DamageEffects": {
+    "Knockback": {
+      "Force": 0.8,
+      "RelativeX": -5,
+      "RelativeZ": -5,
+      "VelocityY": 5
+    },
+    "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+    "WorldParticles": [
+      {
+        "SystemId": "VoidImpact"
+      }
+    ]
+  }
+}

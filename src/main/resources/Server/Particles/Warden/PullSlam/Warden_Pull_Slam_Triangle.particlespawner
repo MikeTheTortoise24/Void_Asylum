@@ -1,0 +1,54 @@
+{
+  "RenderMode": "Erosion",
+  "ParticleRotationInfluence": "None",
+  "ParticleLifeSpan": {
+    "Max": 1.0,
+    "Min": 1.0
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Rnd/FireBeam2.png",
+    "Animation": {
+      "0": {
+        "Opacity": 0,
+        "Color": "#ff0000"
+      },
+      "30": {
+        "Opacity": 0.308,
+        "Color": "#7b0404"
+      },
+      "60": {
+        "Color": "#660303"
+      },
+      "100": {
+        "Opacity": 0,
+        "Color": "#420606"
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 1,
+      "Color": "#d10606",
+      "Rotation": {
+        "X": {
+          "Min": 90,
+          "Max": 90
+        },
+        "Y": {
+          "Min": 90,
+          "Max": 90
+        }
+      },
+      "Scale": {
+        "X": {
+          "Min": 3,
+          "Max": 3
+        }
+      }
+    }
+  },
+  "LifeSpan": 1.0,
+  "LinearFiltering": true,
+  "Shape": "Sphere",
+  "ParticleRotateWithSpawner": true,
+  "SpawnBurst": true,
+  "MaxConcurrentParticles": 1
+}

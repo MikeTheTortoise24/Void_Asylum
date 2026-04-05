@@ -1,0 +1,8 @@
+{
+  "SoundEvents": {
+    "Break": "SFX_Golem_Earth_Stomp_Impact",
+    "Build": "SFX_Golem_Firesteel_Alerted_01",
+    "Hit": "SFX_Crystal_Hit",
+    "Clone": "SFX_Golem_Firesteel_Alerted_01"
+  }
+}

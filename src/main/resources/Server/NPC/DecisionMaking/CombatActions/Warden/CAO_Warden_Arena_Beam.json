@@ -1,0 +1,69 @@
+{
+  "Type": "Ability",
+  "Description": "Activate the beams on the outside of the arena",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 75
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 4500,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 1.25,
+  "AttackDistanceRange": [
+    0,
+    15
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    2,
+    2.8
+  ],
+  "SubState": "Default",
+  "Ability": {
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "Effects": {
+          "ItemPlayerAnimationsId": "Mace",
+          "ItemAnimationId": "SwingDownCharging",
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "WorldSoundEventId": "SFX_Bow_T2_Signature_Nock"
+        },
+        "RunTime": 2.0
+      },
+      {
+        "Type": "ExecuteInteraction",
+        "EntityName": "Boss_Marker_Platform",
+        "Range": 30,
+        "RootInteractionName": "Root_Adathan_Warden_Arena_Beam"
+      },
+      {
+        "Type": "Simple",
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "ItemPlayerAnimationsId": "Mace",
+          "ItemAnimationId": "SwingDownCharged",
+          "WorldSoundEventId": "SFX_Bow_T2_Signature_Shoot"
+        },
+        "RunTime": 2.5
+      }
+    ]
+  }
+}

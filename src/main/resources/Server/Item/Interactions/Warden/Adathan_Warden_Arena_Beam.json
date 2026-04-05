@@ -1,0 +1,21 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Warden_Arena_Beam",
+            "TargetEntityPart": "Entity"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Eye_Void_Attack_Blast",
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      },
+      "RunTime": 0.1
+    }
+  ]
+}

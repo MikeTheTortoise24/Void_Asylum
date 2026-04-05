@@ -1,0 +1,14 @@
+{
+  "AmbientBed": {
+    "Track": "Sounds/Ambience/samuelfjohanns-crawling-danger-303228.ogg",
+    "Volume": -1
+  },
+  "Conditions": {
+    "EnvironmentIds": [
+      "Env_Void_Asylum"
+    ],
+    "SunLightLevel": {
+      "Max": 50
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "TranslationProperties": {
+    "Name": "Void_Asylum.items.Abyssal_Helix_Spear.name"
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "Quality": "Legendary",
+  "ItemLevel": 30,
+  "Model": "Items/Weapons/Spear/Double_Incandescent.blockymodel",
+  "Texture": "Items/Weapons/Double_Warden_Texture.png",
+  "PlayerAnimationsId": "Spear",
+  "MaxStack": 1,
+  "Interactions": {
+    "Primary": "Root_Warden_Basic_Attacks",
+    "Secondary": "Spear_Block",
+    "Ability1": {
+      "Interactions": [
+        "Abyssal_Helix_Spear_Signature"
+      ]
+    }
+  },
+  "InteractionVars": {
+    "Spear_Block_Damage": "Spear_Block_Damage",
+    "Spear_Spin_Swing_Left_Effect": {
+      "Interactions": [
+        {
+          "Parent": "Spear_Spin_Swing_Left_Effect",
+          "Effects": {
+            "Trails": []
+          }
+        }
+      ]
+    },
+    "Spear_Spin_Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Spear_Spin_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 14
+            },
+            "RandomPercentageModifier": 0.15,
+            "Type": "Absolute"
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Axe_Special_Impact"
+          }
+        }
+      ]
+    },
+    "Spear_Spin_Swing_Right_Effect": {
+      "Interactions": [
+        {
+          "Parent": "Spear_Spin_Swing_Right_Effect",
+          "Effects": {
+            "Trails": []
+          }
+        }
+      ]
+    },
+    "Spear_Spin_Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Spear_Spin_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 14
+            },
+            "RandomPercentageModifier": 0.15,
+            "Type": "Absolute"
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Axe_Special_Impact"
+          }
+        }
+      ]
+    },
+    "Spear_Throw_Charged_Projectile": {
+      "Interactions": [
+        {
+          "Parent": "Spear_Throw_Charged_Projectile",
+          "ProjectileId": "Spear_Double_Incandescent"
+        }
+      ]
+    },
+    "Spear_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Spear_Stab_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 10
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Axe_Special_Impact"
+          }
+        }
+      ]
+    },
+    "Melee_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 28
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    }
+  },
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "IconProperties": {
+    "Scale": 0.22,
+    "Translation": [
+      -64,
+      -64
+    ],
+    "Rotation": [
+      45,
+      90,
+      0
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Weapon_Spear_Double_Incandescent.png",
+  "Trails": [
+    {
+      "TrailId": "Void",
+      "PositionOffset": {
+        "X": 1.0,
+        "Y": 0,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle"
+    },
+    {
+      "TrailId": "Void",
+      "PositionOffset": {
+        "X": -1.2,
+        "Y": 0,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle"
+    }
+  ],
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Spear"
+    ]
+  },
+  "Weapon": {
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 10,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ]
+  },
+  "Light": {
+    "Color": "#40b",
+    "Radius": 1
+  },
+  "ItemSoundSetId": "ISS_Weapons_Wood",
+  "MaxDurability": 180,
+  "DurabilityLossOnHit": 0.13
+}

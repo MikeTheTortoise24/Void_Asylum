@@ -1,0 +1,39 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Intelligent_No_Knockback_Or_Min_Speed",
+  "Modify": {
+    "Appearance": "Adathan_Forbidden_Practitioner",
+    "DropList": "Drop_Forbidden_Practitioner",
+    "ViewSector": 360,
+    "HearingRange": 6,
+    "ViewRange": 25,
+    "AttackDistance": 10,
+    "CombatStrafeWeight": 50,
+    "CombatBackOffDistanceRange": [
+      7,
+      8.5
+    ],
+    "MaxSpeed": 6.5,
+    "MaxHealth": 2750,
+    "Weapons": [
+      "Weapon_Staff_Wizard"
+    ],
+    "OffHand": [],
+    "DisableDamageGroups": [
+      "Self",
+      "Boss_Marker"
+    ],
+    "UseCombatActionEvaluator": true,
+    "WakingIdleBehaviorComponent": "Component_Instruction_Stationary_Idle",
+    "_CombatConfig": "CAE_Adathan_Forbidden_Practitioner",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "Void_Asylum.npcRoles.Forbidden_Practitioner.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}

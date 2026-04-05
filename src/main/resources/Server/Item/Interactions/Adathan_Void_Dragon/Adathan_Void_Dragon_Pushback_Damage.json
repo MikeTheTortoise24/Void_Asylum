@@ -1,0 +1,30 @@
+{
+  "Type": "DamageEntity",
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Bludgeoning": 15
+    }
+  },
+  "Effects": {
+    "CameraEffect": "Impact_Strong"
+  },
+  "DamageEffects": {
+    "WorldParticles": [
+      {
+        "SystemId": "VoidImpact"
+      }
+    ],
+    "Knockback": {
+      "Type": "Directional",
+      "Force": 25,
+      "VelocityY": 30,
+      "RelativeZ": 1,
+      "VelocityConfig": {
+        "Style": "Exp",
+        "Threshold": 2
+      }
+    },
+    "StaminaDrainMultiplier": 2.5,
+    "CameraEffect": "Impact_Strong"
+  }
+}

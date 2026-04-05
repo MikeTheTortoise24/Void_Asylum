@@ -1,0 +1,42 @@
+{
+  "Model": "Forbidden_Practitioner_Projectile_Basic",
+  "LaunchForce": 10,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 9.8,
+    "TerminalVelocityAir": 42.5,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "Velocity",
+    "SticksVertically": true
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        "Adathan_Forbidden_Practitioner_Basic_Projectile_Damage",
+        {
+          "Type": "RunRootInteraction",
+          "RootInteraction": "Root_Gravity_Staff_Gravity_Well"
+        },
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User"
+        }
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "RunRootInteraction",
+          "RootInteraction": "Root_Gravity_Staff_Gravity_Well"
+        },
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User"
+        }
+      ]
+    }
+  },
+  "SpawnRotationOffset": {
+    "Pitch": 10
+  }
+}

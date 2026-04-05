@@ -1,0 +1,156 @@
+{
+  "WaterTint": "#2076b5",
+  "SpawnDensity": 0,
+  "Tags": {
+    "VoidAsylum": [
+      "Voidbreaker"
+    ]
+  },
+  "WeatherForecasts": {
+    "0": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "1": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "2": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "3": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "4": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "5": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "6": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "7": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "8": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "9": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "10": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "11": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "12": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "13": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "14": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "15": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "16": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "17": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "18": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "19": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "20": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "21": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "22": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ],
+    "23": [
+      {
+        "WeatherId": "Portals_Void_Event_Light",
+        "Weight": 100
+      }
+    ]
+  },
+  "BlockModificationAllowed": false
+}

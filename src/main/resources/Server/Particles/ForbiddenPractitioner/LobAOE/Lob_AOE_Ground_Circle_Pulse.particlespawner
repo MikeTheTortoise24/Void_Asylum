@@ -1,0 +1,57 @@
+{
+  "RenderMode": "BlendLinear",
+  "ParticleRotationInfluence": "None",
+  "LinearFiltering": true,
+  "TrailSpawnerPositionMultiplier": 1.0,
+  "TrailSpawnerRotationMultiplier": 1.0,
+  "ParticleLifeSpan": {
+    "Min": 0.5,
+    "Max": 0.75
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Circles/Circle_Glow.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "UVOption": "None",
+    "Animation": {
+      "0": {
+        "Opacity": 0.728,
+        "Color": "#6f04bb",
+        "Scale": {
+          "X": {
+            "Min": 2.5,
+            "Max": 2.5
+          }
+        }
+      },
+      "90": {
+        "Opacity": 0.42
+      },
+      "100": {
+        "Color": "#7702bc",
+        "Scale": {
+          "X": {
+            "Min": 0.1,
+            "Max": 0.1
+          }
+        },
+        "Opacity": 0
+      }
+    },
+    "InitialAnimationFrame": {
+      "Rotation": {
+        "X": {
+          "Min": 90,
+          "Max": 90
+        }
+      },
+      "Color": "#a00303"
+    }
+  },
+  "LifeSpan": 5,
+  "MaxConcurrentParticles": 1000,
+  "Shape": "Sphere",
+  "SpawnRate": {
+    "Min": 1.5,
+    "Max": 2.5
+  }
+}

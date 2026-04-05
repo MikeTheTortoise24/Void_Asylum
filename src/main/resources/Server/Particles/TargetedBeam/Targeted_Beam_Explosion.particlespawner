@@ -1,0 +1,142 @@
+{
+  "RenderMode": "BlendAdd",
+  "ParticleRotationInfluence": "Billboard",
+  "LinearFiltering": true,
+  "LightInfluence": 0,
+  "MaxConcurrentParticles": 250,
+  "ParticleLifeSpan": {
+    "Min": 0.25,
+    "Max": 0.7833333333333333
+  },
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "Particle": {
+    "Texture": "Particles/Textures/Smoke/Smoke_Impact2.png",
+    "FrameSize": {
+      "Width": 124,
+      "Height": 124
+    },
+    "UVOption": "RandomFlipUV",
+    "Animation": {
+      "0": {
+        "Opacity": 0
+      },
+      "50": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Scale": {
+          "X": {
+            "Min": 0.3,
+            "Max": 0.5
+          },
+          "Y": {
+            "Min": 0.3,
+            "Max": 0.6
+          }
+        },
+        "Rotation": {
+          "X": {
+            "Min": 0,
+            "Max": -1
+          },
+          "Y": {
+            "Min": 0,
+            "Max": -91
+          },
+          "Z": {
+            "Min": 0,
+            "Max": -91
+          }
+        },
+        "Opacity": 0
+      },
+      "60": {
+        "Opacity": 0.66,
+        "Color": "#4e0483"
+      },
+      "72": {},
+      "84": {},
+      "96": {
+        "Opacity": 0.328,
+        "Color": "#230338"
+      },
+      "100": {
+        "Opacity": 0
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 1,
+      "Color": "#4a00a4",
+      "FrameIndex": {
+        "Max": 12
+      },
+      "Scale": {
+        "X": {
+          "Min": 1.5,
+          "Max": 1.5
+        },
+        "Y": {
+          "Min": 1.5,
+          "Max": 1.5
+        }
+      }
+    }
+  },
+  "LifeSpan": 1.0,
+  "EmitOffset": {
+    "X": {
+      "Min": 5,
+      "Max": 5
+    },
+    "Z": {
+      "Min": 5,
+      "Max": 5
+    },
+    "Y": {
+      "Min": -0.75,
+      "Max": -0.75
+    }
+  },
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 1,
+      "Max": 12
+    },
+    "Pitch": {
+      "Min": 90,
+      "Max": 90
+    }
+  },
+  "Attractors": [
+    {
+      "Position": {
+        "X": 0,
+        "Y": 0.5,
+        "Z": 0
+      },
+      "RadialAxis": {
+        "X": 0,
+        "Y": 1
+      },
+      "Radius": 0,
+      "RadialAcceleration": -5,
+      "RadialTangentAcceleration": -1,
+      "LinearAcceleration": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    {
+      "RadialTangentAcceleration": -1,
+      "RadialAcceleration": -5
+    }
+  ],
+  "SpawnBurst": true,
+  "SpawnRate": {
+    "Min": 1000,
+    "Max": 1000
+  }
+}

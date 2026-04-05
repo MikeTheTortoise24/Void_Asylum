@@ -1,0 +1,38 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Warden_Quad_Triangle_Explosion",
+      "PositionOffset": {
+        "Y": 0.5
+      }
+    },
+    {
+      "SpawnerId": "Warden_Quad_Triangle_Explosion",
+      "PositionOffset": {
+        "Y": 0.5
+      },
+      "RotationOffset": {
+        "Yaw": 90
+      }
+    },
+    {
+      "SpawnerId": "Warden_Quad_Triangle_Explosion",
+      "PositionOffset": {
+        "Y": 0.5
+      },
+      "RotationOffset": {
+        "Yaw": 180
+      }
+    },
+    {
+      "SpawnerId": "Warden_Quad_Triangle_Explosion",
+      "PositionOffset": {
+        "Y": 0.5
+      },
+      "RotationOffset": {
+        "Yaw": 270
+      }
+    }
+  ],
+  "IsImportant": true
+}

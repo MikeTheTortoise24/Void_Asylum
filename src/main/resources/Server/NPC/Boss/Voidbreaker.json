@@ -1,0 +1,8 @@
+{
+  "BossBar": {
+    "DisplayName": "Voidbreaker",
+    "NameColor": "#eeeeee",
+    "ShowRadius": 30.0,
+    "HideRadius": 40.0
+  }
+}

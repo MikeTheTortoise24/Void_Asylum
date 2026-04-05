@@ -1,0 +1,47 @@
+{
+  "Type": "Parallel",
+  "Interactions": [
+    {
+      "Interactions": [
+        {
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "ApplyForce",
+              "Direction": {
+                "X": -1,
+                "Y": 0.005,
+                "Z": -1
+              },
+              "Force": 1000,
+              "CollisionNext": "Voidbreaker_Dashes_Damage",
+              "VelocityConfig": {
+                "Threshold": 10,
+                "Style": "Exp"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 3.0
+        }
+      ]
+    }
+  ],
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "Void_Dragon_Effects",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Head"
+      }
+    ],
+    "WorldSoundEventId": "SFX_Eye_Void_Attack_Blast"
+  },
+  "RunTime": 1.0
+}

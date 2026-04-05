@@ -1,0 +1,25 @@
+{
+  "Model": "Adathan_Void_Dragon_Spear",
+  "LaunchForce": 125,
+  "Physics": {
+    "Type": "Standard",
+    "TerminalVelocityAir": 42.5,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "None",
+    "Bounciness": 0.0,
+    "SticksVertically": true
+  },
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 0.6,
+          "Next": {
+            "Type": "RemoveEntity"
+          }
+        }
+      ]
+    }
+  }
+}

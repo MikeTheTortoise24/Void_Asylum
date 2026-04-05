@@ -1,0 +1,25 @@
+{
+  "Type": "DamageEntity",
+  "Effects": {
+    "CameraEffect": "Impact_Strong"
+  },
+  "DamageEffects": {
+    "Knockback": {
+      "Type": "Point",
+      "VelocityConfig": {
+        "Style": "Exp",
+        "Threshold": 2,
+        "AirResistance": 0.75,
+        "AirResistanceMax": 0.75
+      },
+      "Force": 15,
+      "VelocityY": 20
+    },
+    "CameraEffect": "Impact"
+  },
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Environmental": 40
+    }
+  }
+}

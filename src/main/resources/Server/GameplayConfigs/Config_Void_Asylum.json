@@ -1,0 +1,31 @@
+{
+  "Parent": "Default",
+  "Death": {
+    "ItemsLossMode": "None",
+    "RespawnController": {
+      "Type": "WorldSpawnPoint"
+    },
+    "ItemsAmountLossPercentage": 0,
+    "ItemsDurabilityLossPercentage": 0
+  },
+  "World": {
+    "DaytimeDurationSeconds": 0,
+    "NighttimeDurationSeconds": 1728
+  },
+  "Combat": {
+    "DisplayHealthBars": true,
+    "DisplayCombatText": true
+  },
+  "Plugin": {
+    "Portal": {
+      "VoidEvent": {
+        "DurationSeconds": 180
+      }
+    }
+  },
+  "WorldMap": {
+    "DisplaySpawn": false,
+    "DisplayPlayers": true,
+    "CanTogglePlayersInMap": true
+  }
+}

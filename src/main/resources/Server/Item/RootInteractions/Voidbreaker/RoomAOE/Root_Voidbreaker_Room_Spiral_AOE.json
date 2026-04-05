@@ -1,0 +1,20 @@
+{
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "WorldSoundEventId": "SFX_Eye_Void_Attack_Blast"
+      }
+    },
+    {
+      "Type": "Repeat",
+      "ForkInteractions": {
+        "Interactions": [
+          "Voidbreaker_Room_Spiral_AOE"
+        ]
+      },
+      "Repeat": 100,
+      "Effects": {}
+    }
+  ]
+}

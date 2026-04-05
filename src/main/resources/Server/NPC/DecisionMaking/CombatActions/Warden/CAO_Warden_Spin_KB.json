@@ -1,0 +1,60 @@
+{
+  "Type": "Ability",
+  "Description": "Spin around once, dealing damage in an small AOE around the boss.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "XRange": [
+          0,
+          15
+        ],
+        "ResponseCurve": "Linear"
+      }
+    },
+    {
+      "Type": "TargetDistance",
+      "Curve": {
+        "XRange": [
+          0,
+          12
+        ],
+        "ResponseCurve": "ReverseLinear"
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 4750,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 1.25,
+  "AttackDistanceRange": [
+    0,
+    6
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    2,
+    2.8
+  ],
+  "ChargeFor": 1,
+  "Ability": {
+    "Interactions": [
+      "Adathan_Warden_Spin_KB"
+    ]
+  },
+  "InteractionVars": {
+    "Melee_Damage": {
+      "Interactions": [
+        "Adathan_Warden_Spin_KB_Damage"
+      ]
+    }
+  }
+}

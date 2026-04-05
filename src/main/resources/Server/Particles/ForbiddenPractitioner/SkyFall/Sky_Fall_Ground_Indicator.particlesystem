@@ -1,0 +1,17 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Sky_Fall_Ground_Indicator_Swirl",
+      "FixedRotation": true,
+      "PositionOffset": {
+        "Y": 0.2
+      }
+    },
+    {
+      "SpawnerId": "Sky_Fall_Ground_Indicator_Ring",
+      "PositionOffset": {
+        "Y": 0.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "Type": "Ability",
+  "Description": "Circle that shares its damage with multiple entities.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 10
+      }
+    },
+    {
+      "Type": "Randomiser",
+      "MinValue": 0.9,
+      "MaxValue": 1
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 1.25,
+  "ChargeFor": 1,
+  "AttackDistanceRange": [
+    0,
+    15
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    2,
+    3
+  ],
+  "Ability": "Root_Voidbreaker_Dashes"
+}

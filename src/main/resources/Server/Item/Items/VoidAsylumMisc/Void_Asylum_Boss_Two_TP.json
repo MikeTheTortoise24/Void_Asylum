@@ -1,0 +1,72 @@
+{
+  "TranslationProperties": {
+    "Name": "Boss 1 Teleport",
+    "Description": "Teleports the user into the boss fight."
+  },
+  "Icon": "Icons/ItemsGenerated/Rock_Bedrock.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Rock"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "BlockParticleSetId": "Stone",
+    "ParticleColor": "#1a1026",
+    "BlockSoundSetId": "Stone",
+    "HitboxType": "Portal_3x3",
+    "Opacity": "Transparent",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Projectiles/Tornado_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "CustomModel": "Blocks/Miscellaneous/Map.blockymodel",
+    "Interactions": {
+      "CollisionEnter": {
+        "Interactions": [
+          {
+            "Type": "TeleportSelfStatic",
+            "StaticX": 0.5,
+            "StaticY": 102.0,
+            "StaticZ": -121.5
+          }
+        ]
+      },
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "TeleportSelfStatic",
+            "StaticX": 0.5,
+            "StaticY": 102.0,
+            "StaticZ": -121.5
+          }
+        ]
+      }
+    },
+    "IgnoreSupportWhenPlaced": true,
+    "InteractionHitboxType": "Portal_3x3",
+    "InteractionHint": "Enter Fight",
+    "Particles": [
+      {
+        "SystemId": "Portal_Purple",
+        "TargetEntityPart": "Entity",
+        "RotationOffset": {
+          "Yaw": 180
+        },
+        "PositionOffset": {
+          "X": 1,
+          "Y": -1.3
+        },
+        "Scale": 1.1
+      }
+    ]
+  }
+}

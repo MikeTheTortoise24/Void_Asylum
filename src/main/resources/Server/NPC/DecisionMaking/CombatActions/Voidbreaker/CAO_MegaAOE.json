@@ -1,0 +1,32 @@
+{
+  "Type": "Ability",
+  "Description": "Drop crystals from the ceiling and perform a large AOE attack. Must stand behind crystals to dodge.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 50
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 2200,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 2.5,
+  "ChargeFor": 1,
+  "AttackDistanceRange": [
+    0,
+    40
+  ],
+  "AbilityType": "Primary",
+  "Ability": "Root_Voidbreaker_MegaAOE"
+}

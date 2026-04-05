@@ -1,0 +1,28 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Gravity_Well_Particle_In",
+      "PositionOffset": {
+        "Y": 1
+      }
+    },
+    {
+      "SpawnerId": "Gravity_Well_Distortion",
+      "PositionOffset": {
+        "Y": 1
+      }
+    },
+    {
+      "SpawnerId": "Gravity_Well_Center_Ball",
+      "PositionOffset": {
+        "Y": 1
+      }
+    },
+    {
+      "SpawnerId": "Gravity_Well_Orb_Ring",
+      "PositionOffset": {
+        "Y": 0.1
+      }
+    }
+  ]
+}

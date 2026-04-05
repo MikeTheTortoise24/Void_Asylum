@@ -1,0 +1,160 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.05,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Warden_Quad_Triangle",
+            "TargetEntityPart": "Entity",
+            "DetachedFromModel": true
+          }
+        ],
+        "WorldSoundEventId": "SFX_Eye_Void_Attack_Blast",
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      },
+      "RunTime": 2.5
+    },
+    {
+      "Type": "Parallel",
+      "Interactions": [
+        {
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "HitEntity": {
+                "Interactions": [
+                  "Adathan_Warden_Quad_Triangle_Damage"
+                ]
+              },
+              "Selector": {
+                "Id": "Horizontal",
+                "Length": 45,
+                "Direction": "ToRight",
+                "EndDistance": 15,
+                "ExtendTop": 3,
+                "ExtendBottom": 3,
+                "YawStartOffset": -22.5,
+                "TestLineOfSight": true
+              },
+              "RunTime": 0.1,
+              "Effects": {
+                "MovementEffects": {
+                  "DisableAll": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "HitEntity": {
+                "Interactions": [
+                  "Adathan_Warden_Quad_Triangle_Damage"
+                ]
+              },
+              "Selector": {
+                "Id": "Horizontal",
+                "Length": 45,
+                "Direction": "ToRight",
+                "EndDistance": 15,
+                "ExtendTop": 3,
+                "ExtendBottom": 3,
+                "YawStartOffset": -202.5,
+                "TestLineOfSight": true
+              },
+              "RunTime": 0.1,
+              "Effects": {
+                "MovementEffects": {
+                  "DisableAll": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "HitEntity": {
+                "Interactions": [
+                  "Adathan_Warden_Quad_Triangle_Damage"
+                ]
+              },
+              "Selector": {
+                "Id": "Horizontal",
+                "Length": 45,
+                "Direction": "ToRight",
+                "EndDistance": 15,
+                "ExtendTop": 3,
+                "ExtendBottom": 3,
+                "YawStartOffset": -292.5,
+                "TestLineOfSight": true
+              },
+              "RunTime": 0.1,
+              "Effects": {
+                "MovementEffects": {
+                  "DisableAll": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "HitEntity": {
+                "Interactions": [
+                  "Adathan_Warden_Quad_Triangle_Damage"
+                ]
+              },
+              "Selector": {
+                "Id": "Horizontal",
+                "Length": 45,
+                "Direction": "ToRight",
+                "EndDistance": 15,
+                "ExtendTop": 3,
+                "ExtendBottom": 3,
+                "YawStartOffset": -112.5,
+                "TestLineOfSight": true
+              },
+              "RunTime": 0.1,
+              "Effects": {
+                "MovementEffects": {
+                  "DisableAll": true
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Warden_Quad_Triangle_Explosion",
+            "TargetEntityPart": "Entity",
+            "DetachedFromModel": true
+          }
+        ],
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    }
+  ]
+}

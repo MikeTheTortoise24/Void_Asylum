@@ -1,0 +1,16 @@
+{
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Effect_Crown_Gold",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Head",
+        "Scale": 1,
+        "Color": "#3d028e"
+      }
+    ],
+    "EntityBottomTint": "#6302c3",
+    "EntityTopTint": "#0d0023"
+  },
+  "Infinite": true
+}

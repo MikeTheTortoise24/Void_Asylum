@@ -1,0 +1,38 @@
+{
+  "Model": "Voidbreaker_Projectile_Green",
+  "LaunchForce": 2,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 0,
+    "TerminalVelocityAir": 42.5,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "Velocity",
+    "SticksVertically": true
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        "Voidbreaker_Arena_Spiral_Damage",
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User"
+        }
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 0
+        },
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User"
+        }
+      ]
+    }
+  },
+  "SpawnOffset": {
+    "Y": 1.0
+  }
+}

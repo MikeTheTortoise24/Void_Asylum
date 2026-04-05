@@ -1,0 +1,32 @@
+{
+  "Tags": {
+    "Attack": [
+      "Ranged"
+    ]
+  },
+  "Interactions": [
+    {
+      "Type": "Chaining",
+      "ChainingAllowance": 100,
+      "ChainId": "SkyFall",
+      "Next": [
+        {
+          "Type": "RunRootInteraction",
+          "RootInteraction": "Root_Forbidden_Practitioner_Sky_Fall_CounterClockwise"
+        },
+        {
+          "Type": "RunRootInteraction",
+          "RootInteraction": "Root_Forbidden_Practitioner_Sky_Fall_Line"
+        },
+        {
+          "Type": "RunRootInteraction",
+          "RootInteraction": "Root_Forbidden_Practitioner_Sky_Fall_X"
+        },
+        {
+          "Type": "RunRootInteraction",
+          "RootInteraction": "Root_Forbidden_Practitioner_Sky_Fall_ThreeXThree"
+        }
+      ]
+    }
+  ]
+}

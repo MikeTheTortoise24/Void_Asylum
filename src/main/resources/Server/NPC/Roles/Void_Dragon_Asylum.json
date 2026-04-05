@@ -1,0 +1,33 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Adathan_Flying",
+  "Modify": {
+    "Appearance": "Adathan_Void_Dragon",
+    "DropList": "Drop_Void_Dragon",
+    "MaxHealth": 5000,
+    "IsMemory": false,
+    "AttackDistance": 8.5,
+    "DesiredAttackDistanceRange": [
+      7,
+      8
+    ],
+    "Weapons": [],
+    "OffHand": [],
+    "DisableDamageGroups": [
+      "Self",
+      "Boss_Marker"
+    ],
+    "UseCombatActionEvaluator": true,
+    "_CombatConfig": "CAE_Adathan_Void_Dragon",
+    "MemoriesCategory": "Voidspawn",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "Void_Asylum.npcRoles.Void_Dragon.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}

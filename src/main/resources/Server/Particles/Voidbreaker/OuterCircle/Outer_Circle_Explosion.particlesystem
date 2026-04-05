@@ -1,0 +1,9 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Outer_Circle_Explosion_AOE"
+    }
+  ],
+  "BoundingRadius": 100,
+  "IsImportant": true
+}

@@ -1,0 +1,42 @@
+{
+  "Type": "Ability",
+  "Description": "Shoot a 90 degree cone of flames in the direction of the player.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "XRange": [
+          0,
+          30
+        ],
+        "ResponseCurve": "Linear"
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "AttackDistanceRange": [
+    8,
+    12
+  ],
+  "Ability": {
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "WorldSoundEventId": "Adathan_Void_Dragon_Roar"
+        },
+        "RunTime": 2.0
+      },
+      "Adathan_Void_Dragon_Breath"
+    ]
+  },
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    8,
+    10
+  ],
+  "RequireAiming": true
+}

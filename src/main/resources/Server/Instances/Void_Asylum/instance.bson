@@ -1,0 +1,47 @@
+{
+  "$Comment": "This instanced world spawns a Default world from the Hytale Generator prototype",
+  "RequiredPlugins": {},
+  "ChunkStorage": {
+    "Type": "Hytale"
+  },
+  "GameMode": "Adventure",
+  "IsPvpEnabled": false,
+  "IsSpawningNPC": true,
+  "GameTime": "0001-01-01T07:00:00Z",
+  "UUID": {
+    "$binary": "AZKxiVAMQfWIS0qBsBfjzQ==",
+    "$type": "04"
+  },
+  "GameplayConfig": "Config_Void_Asylum",
+  "IsCompassUpdating": true,
+  "IsTicking": true,
+  "IsGameTimePaused": false,
+  "IsObjectiveMarkersEnabled": true,
+  "IsAllNPCFrozen": false,
+  "IsSavingPlayers": true,
+  "WorldGen": {
+    "Type": "HytaleGenerator",
+    "WorldStructure": "Void_Asylum"
+  },
+	"SpawnProvider": {
+    "Id": "Global",
+    "SpawnPoint": {
+      "X": 24,
+      "Y": 157,
+      "Z": -10,
+      "Pitch": 0,
+      "Yaw": 180,
+      "Roll": 0.0
+    }
+  },
+	"Instance": {
+    "RemovalConditions": [
+      {
+        "Type": "WorldEmpty"
+      }
+    ]
+  },
+  "IsSpawnMarkersEnabled": true,
+  "DeleteOnRemove": true,
+  "Version": 2
+}

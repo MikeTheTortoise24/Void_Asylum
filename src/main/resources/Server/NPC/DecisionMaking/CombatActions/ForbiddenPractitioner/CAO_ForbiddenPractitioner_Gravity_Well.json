@@ -1,0 +1,140 @@
+{
+  "Type": "Ability",
+  "Description": "Spawns gravity wells around the arena, 2 randomly, 1 on up to 2 players each.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Default",
+        "ResponseCurve": "Linear",
+        "XRange": [
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "Type": "TargetDistance",
+      "Curve": {
+        "XRange": [
+          0,
+          15
+        ],
+        "ResponseCurve": "Linear"
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 1.0,
+  "AttackDistanceRange": [
+    0,
+    15
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    8,
+    10
+  ],
+  "SubState": "Default",
+  "Ability": {
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "RunTime": 1.0,
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "ItemPlayerAnimationsId": "Staff",
+          "ItemAnimationId": "CastSummonCharging",
+          "Particles": [
+            {
+              "SystemId": "Adathan_Generic_Spell_Cast",
+              "TargetEntityPart": "Entity",
+              "Color": "#e5cff4",
+              "Scale": 0.5
+            }
+          ],
+          "WorldSoundEventId": "SFX_Forbidden_Practitioner_Gravity_Well_Start"
+        },
+        "Rules": {
+          "InterruptedBy": [
+            "Death"
+          ]
+        }
+      },
+      {
+        "Type": "Simple",
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "ItemPlayerAnimationsId": "Staff",
+          "ItemAnimationId": "CastSummonCharged"
+        },
+        "RunTime": 0.5,
+        "Rules": {
+          "InterruptedBy": [
+            "Death"
+          ]
+        }
+      },
+      {
+        "Type": "ExecuteInteractionAtPlayer",
+        "RootInteractionName": "Root_Forbidden_Practitioner_Gravity_Well",
+        "EntityNameToSpawn": "Boss_Marker",
+        "Range": 30,
+        "Rules": {
+          "InterruptedBy": [
+            "Death"
+          ]
+        }
+      },
+      {
+        "Type": "Repeat",
+        "Repeat": 2,
+        "ForkInteractions": {
+          "Interactions": [
+            {
+              "Type": "ExecuteInteractionAroundPointRandomly",
+              "AnchorX": 0.5,
+              "AnchorZ": -71.5,
+              "AnchorY": 102,
+              "Radius": 12,
+              "EntityNameToSpawn": "Boss_Marker",
+              "RootInteractionName": "Root_Forbidden_Practitioner_Gravity_Well"
+            },
+            {
+              "Type": "Simple",
+              "RunTime": 0.2
+            }
+          ]
+        },
+        "Rules": {
+          "InterruptedBy": [
+            "Death"
+          ]
+        }
+      },
+      {
+        "Type": "Simple",
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          }
+        },
+        "RunTime": 0.75,
+        "Rules": {
+          "InterruptedBy": [
+            "Death"
+          ]
+        }
+      }
+    ],
+    "Rules": {
+      "InterruptedBy": [
+        "Death"
+      ]
+    }
+  }
+}

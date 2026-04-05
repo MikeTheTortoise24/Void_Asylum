@@ -1,0 +1,39 @@
+{
+  "Type": "Ability",
+  "Description": "Fly up in the air and slam down on the ground after a few seconds.",
+  "Target": "Hostile",
+  "WeightCoefficient": 1.25,
+  "ChargeFor": 1,
+  "AttackDistanceRange": [
+    0,
+    5
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    2,
+    3
+  ],
+  "Ability": "Root_Voidbreaker_Ground_Slam",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "XRange": [
+          0,
+          30
+        ],
+        "ResponseCurve": "Linear"
+      }
+    },
+    {
+      "Type": "TargetDistance",
+      "Curve": {
+        "XRange": [
+          4,
+          12
+        ],
+        "ResponseCurve": "ReverseLinear"
+      }
+    }
+  ]
+}

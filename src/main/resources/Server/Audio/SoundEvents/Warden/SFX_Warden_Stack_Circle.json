@@ -1,0 +1,21 @@
+{
+  "Volume": 2,
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Adathan_Warden/SFX_Stack_Circle.ogg"
+      ],
+      "RandomSettings": {
+        "MinVolume": 0,
+        "MinPitch": -0.5,
+        "MaxPitch": 0.5
+      },
+      "Volume": 0,
+      "Probability": 100
+    }
+  ],
+  "PreventSoundInterruption": true,
+  "Parent": "SFX_Attn_VeryLoud",
+  "MaxDistance": 40,
+  "Pitch": 3.5
+}

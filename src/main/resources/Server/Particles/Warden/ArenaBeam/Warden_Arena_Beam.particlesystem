@@ -1,0 +1,23 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Warden_Arena_Beam_Lines",
+      "PositionOffset": {
+        "Y": 0.5
+      }
+    },
+    {
+      "SpawnerId": "Warden_Arena_Beam_Center",
+      "PositionOffset": {
+        "Y": 0.5
+      }
+    },
+    {
+      "SpawnerId": "Warden_Arena_Beam_Light",
+      "PositionOffset": {
+        "Y": 0.3
+      }
+    }
+  ],
+  "IsImportant": true
+}

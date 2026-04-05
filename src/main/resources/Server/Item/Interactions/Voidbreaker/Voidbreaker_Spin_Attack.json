@@ -1,0 +1,476 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Golem_Crystal_Earth_Default",
+    "ItemAnimationId": "SpinHeavy",
+    "WorldSoundEventId": "SFX_Eye_Void_Attack_Summon",
+    "Particles": [
+      {
+        "SystemId": "Voidbreaker_SpinStart",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "Y": 2.0
+        },
+        "Scale": 5,
+        "TargetNodeName": "",
+        "Color": "#3a0371"
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 1,
+  "Next": {
+    "Type": "Parallel",
+    "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "$Comment": "Length of Combat",
+            "RunTime": 0.25,
+            "Selector": {
+              "Id": "Horizontal",
+              "Direction": "ToLeft",
+              "TestLineOfSight": true,
+              "ExtendTop": 0,
+              "ExtendBottom": 2,
+              "StartDistance": 0.5,
+              "EndDistance": 3.25,
+              "Length": 360,
+              "RollOffset": 0,
+              "YawStartOffset": -90
+            },
+            "Next": {
+              "Type": "Selector",
+              "$Comment": "Length of Combat",
+              "RunTime": 0.25,
+              "Selector": {
+                "Id": "Horizontal",
+                "Direction": "ToLeft",
+                "TestLineOfSight": true,
+                "ExtendTop": 0,
+                "ExtendBottom": 2,
+                "StartDistance": 0.5,
+                "EndDistance": 3.25,
+                "Length": 360,
+                "RollOffset": 0,
+                "YawStartOffset": -90
+              },
+              "Next": {
+                "Type": "Selector",
+                "$Comment": "Length of Combat",
+                "RunTime": 0.25,
+                "Selector": {
+                  "Id": "Horizontal",
+                  "Direction": "ToLeft",
+                  "TestLineOfSight": true,
+                  "ExtendTop": 0,
+                  "ExtendBottom": 2,
+                  "StartDistance": 0.5,
+                  "EndDistance": 3.25,
+                  "Length": 360,
+                  "RollOffset": 0,
+                  "YawStartOffset": -90
+                },
+                "Next": {
+                  "Type": "Selector",
+                  "$Comment": "Length of Combat",
+                  "RunTime": 0.25,
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Direction": "ToLeft",
+                    "TestLineOfSight": true,
+                    "ExtendTop": 0,
+                    "ExtendBottom": 2,
+                    "StartDistance": 0.5,
+                    "EndDistance": 3.25,
+                    "Length": 360,
+                    "RollOffset": 0,
+                    "YawStartOffset": -90
+                  },
+                  "Next": {
+                    "Type": "Selector",
+                    "$Comment": "Length of Combat",
+                    "RunTime": 0.25,
+                    "Selector": {
+                      "Id": "Horizontal",
+                      "Direction": "ToLeft",
+                      "TestLineOfSight": true,
+                      "ExtendTop": 0,
+                      "ExtendBottom": 2,
+                      "StartDistance": 0.5,
+                      "EndDistance": 3.25,
+                      "Length": 360,
+                      "RollOffset": 0,
+                      "YawStartOffset": -90
+                    },
+                    "Next": {
+                      "Type": "Parallel",
+                      "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+                      "Interactions": [
+                        {
+                          "Interactions": [
+                            {
+                              "Type": "Selector",
+                              "$Comment": "Length of Combat",
+                              "RunTime": 0.25,
+                              "Selector": {
+                                "Id": "Horizontal",
+                                "Direction": "ToLeft",
+                                "TestLineOfSight": true,
+                                "ExtendTop": 0,
+                                "ExtendBottom": 2,
+                                "StartDistance": 0.5,
+                                "EndDistance": 3.25,
+                                "Length": 360,
+                                "RollOffset": 0,
+                                "YawStartOffset": -90
+                              },
+                              "Next": {
+                                "Type": "Selector",
+                                "$Comment": "Length of Combat",
+                                "RunTime": 0.25,
+                                "Selector": {
+                                  "Id": "Horizontal",
+                                  "Direction": "ToLeft",
+                                  "TestLineOfSight": true,
+                                  "ExtendTop": 0,
+                                  "ExtendBottom": 2,
+                                  "StartDistance": 0.5,
+                                  "EndDistance": 3.25,
+                                  "Length": 360,
+                                  "RollOffset": 0,
+                                  "YawStartOffset": -90
+                                },
+                                "Next": {
+                                  "Type": "Selector",
+                                  "$Comment": "Length of Combat",
+                                  "RunTime": 0.25,
+                                  "Selector": {
+                                    "Id": "Horizontal",
+                                    "Direction": "ToLeft",
+                                    "TestLineOfSight": true,
+                                    "ExtendTop": 0,
+                                    "ExtendBottom": 2,
+                                    "StartDistance": 0.5,
+                                    "EndDistance": 3.25,
+                                    "Length": 360,
+                                    "RollOffset": 0,
+                                    "YawStartOffset": -90
+                                  },
+                                  "Next": {
+                                    "Type": "Selector",
+                                    "$Comment": "Length of Combat",
+                                    "RunTime": 0.25,
+                                    "Selector": {
+                                      "Id": "Horizontal",
+                                      "Direction": "ToLeft",
+                                      "TestLineOfSight": true,
+                                      "ExtendTop": 0,
+                                      "ExtendBottom": 2,
+                                      "StartDistance": 0.5,
+                                      "EndDistance": 3.25,
+                                      "Length": 360,
+                                      "RollOffset": 0,
+                                      "YawStartOffset": -90
+                                    },
+                                    "Next": {
+                                      "Type": "Selector",
+                                      "$Comment": "Length of Combat",
+                                      "RunTime": 0.25,
+                                      "Selector": {
+                                        "Id": "Horizontal",
+                                        "Direction": "ToLeft",
+                                        "TestLineOfSight": true,
+                                        "ExtendTop": 0,
+                                        "ExtendBottom": 2,
+                                        "StartDistance": 0.5,
+                                        "EndDistance": 3.25,
+                                        "Length": 360,
+                                        "RollOffset": 0,
+                                        "YawStartOffset": -90
+                                      },
+                                      "HitEntity": {
+                                        "Interactions": [
+                                          {
+                                            "Type": "Replace",
+                                            "DefaultValue": {
+                                              "Interactions": [
+                                                "NPC_Attack_Melee_Damage"
+                                              ]
+                                            },
+                                            "Var": "Melee_Damage"
+                                          }
+                                        ]
+                                      },
+                                      "Effects": {
+                                        "Particles": [
+                                          {
+                                            "SystemId": "Voidbreaker_Spin",
+                                            "TargetEntityPart": "Entity",
+                                            "PositionOffset": {
+                                              "Y": 2.0
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "HitEntity": {
+                                      "Interactions": [
+                                        {
+                                          "Type": "Replace",
+                                          "DefaultValue": {
+                                            "Interactions": [
+                                              "NPC_Attack_Melee_Damage"
+                                            ]
+                                          },
+                                          "Var": "Melee_Damage"
+                                        }
+                                      ]
+                                    },
+                                    "Effects": {
+                                      "Particles": [
+                                        {
+                                          "SystemId": "Voidbreaker_Spin",
+                                          "TargetEntityPart": "Entity",
+                                          "PositionOffset": {
+                                            "Y": 2.0
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "HitEntity": {
+                                    "Interactions": [
+                                      {
+                                        "Type": "Replace",
+                                        "DefaultValue": {
+                                          "Interactions": [
+                                            "NPC_Attack_Melee_Damage"
+                                          ]
+                                        },
+                                        "Var": "Melee_Damage"
+                                      }
+                                    ]
+                                  },
+                                  "Effects": {
+                                    "Particles": [
+                                      {
+                                        "SystemId": "Voidbreaker_Spin",
+                                        "TargetEntityPart": "Entity",
+                                        "PositionOffset": {
+                                          "Y": 2.0
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                "HitEntity": {
+                                  "Interactions": [
+                                    {
+                                      "Type": "Replace",
+                                      "DefaultValue": {
+                                        "Interactions": [
+                                          "NPC_Attack_Melee_Damage"
+                                        ]
+                                      },
+                                      "Var": "Melee_Damage"
+                                    }
+                                  ]
+                                },
+                                "Effects": {
+                                  "Particles": [
+                                    {
+                                      "SystemId": "Voidbreaker_Spin",
+                                      "TargetEntityPart": "Entity",
+                                      "PositionOffset": {
+                                        "Y": 2.0
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "HitEntity": {
+                                "Interactions": [
+                                  {
+                                    "Type": "Replace",
+                                    "DefaultValue": {
+                                      "Interactions": [
+                                        "NPC_Attack_Melee_Damage"
+                                      ]
+                                    },
+                                    "Var": "Melee_Damage"
+                                  }
+                                ]
+                              },
+                              "Effects": {
+                                "Particles": [
+                                  {
+                                    "SystemId": "Voidbreaker_Spin",
+                                    "TargetEntityPart": "Entity",
+                                    "PositionOffset": {
+                                      "Y": 2.0
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "Interactions": [
+                            {
+                              "Type": "Simple",
+                              "$Comment": "Length of Effect",
+                              "RunTime": 2.75,
+                              "Effects": {
+                                "WorldSoundEventId": "SFX_Battleaxe_T2_Swing_Charged"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "HitEntity": {
+                      "Interactions": [
+                        {
+                          "Type": "Replace",
+                          "DefaultValue": {
+                            "Interactions": [
+                              "NPC_Attack_Melee_Damage"
+                            ]
+                          },
+                          "Var": "Melee_Damage"
+                        }
+                      ]
+                    },
+                    "Effects": {
+                      "Particles": [
+                        {
+                          "SystemId": "Voidbreaker_Spin",
+                          "TargetEntityPart": "Entity",
+                          "PositionOffset": {
+                            "Y": 2.0
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultValue": {
+                          "Interactions": [
+                            "NPC_Attack_Melee_Damage"
+                          ]
+                        },
+                        "Var": "Melee_Damage"
+                      }
+                    ]
+                  },
+                  "Effects": {
+                    "Particles": [
+                      {
+                        "SystemId": "Voidbreaker_Spin",
+                        "TargetEntityPart": "Entity",
+                        "PositionOffset": {
+                          "Y": 2.0
+                        }
+                      }
+                    ]
+                  }
+                },
+                "HitEntity": {
+                  "Interactions": [
+                    {
+                      "Type": "Replace",
+                      "DefaultValue": {
+                        "Interactions": [
+                          "NPC_Attack_Melee_Damage"
+                        ]
+                      },
+                      "Var": "Melee_Damage"
+                    }
+                  ]
+                },
+                "Effects": {
+                  "Particles": [
+                    {
+                      "SystemId": "Voidbreaker_Spin",
+                      "TargetEntityPart": "Entity",
+                      "PositionOffset": {
+                        "Y": 2.0
+                      }
+                    }
+                  ]
+                }
+              },
+              "HitEntity": {
+                "Interactions": [
+                  {
+                    "Type": "Replace",
+                    "DefaultValue": {
+                      "Interactions": [
+                        "NPC_Attack_Melee_Damage"
+                      ]
+                    },
+                    "Var": "Melee_Damage"
+                  }
+                ]
+              },
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "Voidbreaker_Spin",
+                    "TargetEntityPart": "Entity",
+                    "PositionOffset": {
+                      "Y": 2.0
+                    }
+                  }
+                ]
+              }
+            },
+            "HitEntity": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "DefaultValue": {
+                    "Interactions": [
+                      "NPC_Attack_Melee_Damage"
+                    ]
+                  },
+                  "Var": "Melee_Damage"
+                }
+              ]
+            },
+            "Effects": {
+              "Particles": [
+                {
+                  "SystemId": "Voidbreaker_Spin",
+                  "TargetEntityPart": "Entity",
+                  "PositionOffset": {
+                    "Y": 2.0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "$Comment": "Length of Effect",
+            "RunTime": 2.75,
+            "Effects": {
+              "WorldSoundEventId": "SFX_Battleaxe_T2_Swing_Charged"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

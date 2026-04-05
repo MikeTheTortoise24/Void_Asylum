@@ -1,0 +1,34 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Stack_Circle_AOE",
+      "PositionOffset": {
+        "Y": 0.25
+      },
+      "StartDelay": 0.5
+    },
+    {
+      "SpawnerId": "Stack_Circle_AOE_Two",
+      "PositionOffset": {
+        "Y": 0.25
+      }
+    },
+    {
+      "SpawnerId": "Stack_Circle_Ring",
+      "PositionOffset": {
+        "Y": 0.1
+      },
+      "StartDelay": 0.5
+    },
+    {
+      "SpawnerId": "Stack_Circle_Dome",
+      "StartDelay": 0.5
+    },
+    {
+      "SpawnerId": "Stack_Circle_Explosion",
+      "StartDelay": 5.0
+    }
+  ],
+  "BoundingRadius": 1000,
+  "IsImportant": true
+}

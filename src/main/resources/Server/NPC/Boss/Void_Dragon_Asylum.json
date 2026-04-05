@@ -1,0 +1,8 @@
+{
+  "BossBar": {
+    "DisplayName": "Void Dragon",
+    "NameColor": "#eeeeee",
+    "ShowRadius": 40.0,
+    "HideRadius": 50.0
+  }
+}

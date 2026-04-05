@@ -1,0 +1,12 @@
+{
+  "Duration": 10,
+  "DamageResistance": {
+    "Fall": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 1.0
+      }
+    ]
+  },
+  "OverlapBehavior": "Overwrite"
+}

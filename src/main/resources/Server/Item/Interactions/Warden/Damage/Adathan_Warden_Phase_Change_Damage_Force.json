@@ -1,0 +1,23 @@
+{
+  "Type": "DamageEntity",
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Elemental": -200
+    }
+  },
+  "Effects": {
+    "CameraEffect": "Impact_Strong"
+  },
+  "DamageEffects": {
+    "Knockback": {
+      "Type": "Force",
+      "Direction": {
+        "Y": 1
+      },
+      "Force": 1.2,
+      "VelocityType": "Set",
+      "Duration": 9.8
+    },
+    "CameraEffect": "Impact_Strong"
+  }
+}

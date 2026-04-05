@@ -1,0 +1,57 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.05,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.1,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "Particles": [
+          {
+            "SystemId": "Stack_Circle",
+            "TargetEntityPart": "Entity"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Skeleton_Mage_Spellbook_Impact"
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 4.7,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "Horizontal",
+        "Length": 360,
+        "Direction": "ToRight",
+        "StartDistance": 3.0,
+        "EndDistance": 20,
+        "ExtendTop": 50,
+        "ExtendBottom": 4
+      },
+      "RunTime": 0.2,
+      "HitEntity": {
+        "Interactions": [
+          "Adathan_Warden_Stack_Circle_Damage"
+        ]
+      }
+    }
+  ]
+}

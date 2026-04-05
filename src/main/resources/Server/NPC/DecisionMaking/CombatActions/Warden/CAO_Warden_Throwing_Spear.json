@@ -1,0 +1,51 @@
+{
+  "Type": "Ability",
+  "Description": "Throws spinning spears around the boss.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 15
+      }
+    },
+    {
+      "Type": "TargetDistance",
+      "Curve": {
+        "Type": "Default",
+        "ResponseCurve": "Linear",
+        "XRange": [
+          0,
+          10
+        ]
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 2450,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 2,
+  "AttackDistanceRange": [
+    0,
+    15
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    2,
+    2.8
+  ],
+  "SubState": "Default",
+  "Ability": {
+    "Interactions": [
+      "Adathan_Warden_Spear_Throw"
+    ]
+  }
+}

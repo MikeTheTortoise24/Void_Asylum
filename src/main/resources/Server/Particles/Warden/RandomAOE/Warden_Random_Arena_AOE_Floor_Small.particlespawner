@@ -1,0 +1,65 @@
+{
+  "RenderMode": "Erosion",
+  "MaxConcurrentParticles": 10,
+  "ParticleLifeSpan": {
+    "Min": 2,
+    "Max": 2
+  },
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "Particle": {
+    "Texture": "Particles/Textures/Circles/Portal_DungeonZone2.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "Animation": {
+      "0": {
+        "Opacity": 0,
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Color": "#f90303"
+      },
+      "33": {
+        "Opacity": 0.852
+      },
+      "66": {
+        "Opacity": 0.596
+      },
+      "80": {
+        "Opacity": 0.7
+      },
+      "100": {
+        "Opacity": 0,
+        "Rotation": {
+          "Y": {
+            "Min": 900,
+            "Max": 2700
+          }
+        },
+        "Color": "#a20909"
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 1.0,
+      "Rotation": {
+        "X": {
+          "Min": 90,
+          "Max": 90
+        }
+      },
+      "Scale": {
+        "X": {
+          "Min": 0.1,
+          "Max": 0.8
+        }
+      }
+    },
+    "UseSpriteBlending": true,
+    "SoftParticlesFadeFactor": 2
+  },
+  "LifeSpan": 2,
+  "SpawnBurst": true,
+  "ParticleRotationInfluence": "None",
+  "IsLowRes": true,
+  "LinearFiltering": true
+}

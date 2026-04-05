@@ -1,0 +1,121 @@
+{
+  "RenderMode": "Erosion",
+  "ParticleRotationInfluence": "Billboard",
+  "MaxConcurrentParticles": 200,
+  "ParticleLifeSpan": {
+    "Min": 0.4,
+    "Max": 0.7
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Fire/Fire_Erosion_Green_32.png",
+    "UVOption": "RandomFlipUV",
+    "Animation": {
+      "0": {
+        "Opacity": 1,
+        "Scale": {
+          "X": {
+            "Min": 0.1,
+            "Max": 0.1
+          },
+          "Y": {
+            "Min": 0.1,
+            "Max": 0.1
+          }
+        }
+      },
+      "30": {
+        "Scale": {
+          "X": {
+            "Min": 0.5,
+            "Max": 0.5
+          },
+          "Y": {
+            "Min": 0.5,
+            "Max": 0.5
+          }
+        }
+      },
+      "60": {
+        "Scale": {
+          "X": {
+            "Min": 0.7,
+            "Max": 0.7
+          },
+          "Y": {
+            "Min": 0.7,
+            "Max": 0.7
+          }
+        }
+      },
+      "100": {
+        "Opacity": 0.25,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1,
+            "Max": 1
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 1,
+      "Rotation": {
+        "Z": {
+          "Max": 360
+        },
+        "Y": {
+          "Max": 360
+        },
+        "X": {
+          "Max": 360
+        }
+      },
+      "FrameIndex": {
+        "Max": 3
+      },
+      "Scale": {
+        "X": {
+          "Min": 3,
+          "Max": 3
+        },
+        "Y": {
+          "Min": 3,
+          "Max": 3
+        }
+      },
+      "Color": "#700404"
+    },
+    "FrameSize": {
+      "Width": 32,
+      "Height": 32
+    }
+  },
+  "LifeSpan": 0.5,
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 5,
+      "Max": 10
+    },
+    "Yaw": {
+      "Min": -22.5,
+      "Max": 22.5
+    }
+  },
+  "Attractors": [
+    {
+      "Radius": 0,
+      "RadialAcceleration": 50,
+      "RadialTangentAcceleration": 2
+    }
+  ],
+  "LinearFiltering": true,
+  "SpawnBurst": true,
+  "SpawnRate": {
+    "Min": 6,
+    "Max": 7
+  }
+}

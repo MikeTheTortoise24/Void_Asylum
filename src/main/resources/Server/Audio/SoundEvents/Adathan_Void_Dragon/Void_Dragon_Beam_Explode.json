@@ -1,0 +1,18 @@
+{
+  "PreventSoundInterruption": true,
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Adathan_Void_Dragon/SFX_Dragon_Beam_Explode.ogg"
+      ],
+      "Volume": 6.0,
+      "RandomSettings": {
+        "MinVolume": -2,
+        "MinPitch": -8.64,
+        "MaxPitch": 7.2
+      }
+    }
+  ],
+  "Volume": 0,
+  "Parent": "SFX_Attn_Loud"
+}

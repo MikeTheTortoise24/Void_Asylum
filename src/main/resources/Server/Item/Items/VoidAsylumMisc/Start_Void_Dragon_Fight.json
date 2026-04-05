@@ -1,0 +1,63 @@
+{
+  "TranslationProperties": {
+    "Name": "Start Void Asylum Fight",
+    "Description": "Sets up the Void Asylum fight!"
+  },
+  "Icon": "Icons/ItemsGenerated/Deco_Fire.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "BlockType": {
+    "DrawType": "Model",
+    "BlockSoundSetId": "Flame",
+    "CustomModel": "Items/Projectiles/Projectile.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Projectiles/Tornado_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Opacity": "Transparent",
+    "HitboxType": "Pad_Portal",
+    "AmbientSoundEventId": "SFX_Flame_Default_Loop",
+    "Looping": true,
+    "Interactions": {
+      "CollisionEnter": {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "RunTime": 0.1
+          },
+          {
+            "Type": "SetBlocksSquare",
+            "YHeight": -1,
+            "SquareSize": 3
+          },
+          {
+            "Type": "BreakBlock"
+          }
+        ]
+      }
+    },
+    "Material": "Empty"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.665,
+    "Translation": [
+      0,
+      -13.5
+    ],
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

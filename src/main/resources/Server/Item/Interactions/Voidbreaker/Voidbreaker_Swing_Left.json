@@ -1,0 +1,82 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Hedera_Default",
+    "ItemAnimationId": "ScratchLeft",
+    "WorldSoundEventId": "SFX_Battleaxe_T2_Raise",
+    "LocalSoundEventId": "SFX_Battleaxe_T2_Raise_Local"
+  },
+  "RunTime": 0.83,
+  "Next": {
+    "Type": "Parallel",
+    "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "$Comment": "Length of Combat",
+            "RunTime": 0.25,
+            "Selector": {
+              "Id": "Horizontal",
+              "Direction": "ToLeft",
+              "TestLineOfSight": true,
+              "ExtendTop": 0.5,
+              "ExtendBottom": 2,
+              "StartDistance": 0.1,
+              "EndDistance": 2.8,
+              "Length": 90,
+              "RollOffset": 30,
+              "YawStartOffset": -45,
+              "PitchOffset": -20
+            },
+            "HitEntity": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "DefaultOk": true,
+                  "DefaultValue": {
+                    "Interactions": [
+                      "Voidbreaker_Basic_Attack_Damage"
+                    ]
+                  },
+                  "Var": "Swing_Left_Damage"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "$Comment": "Length of Effect",
+            "RunTime": 0.5,
+            "Effects": {
+              "Trails": [
+                {
+                  "TrailId": "Void",
+                  "TargetNodeName": "R-Hand",
+                  "TargetEntityPart": "Entity",
+                  "RotationOffset": {
+                    "Yaw": 0,
+                    "Pitch": 0,
+                    "Roll": 90
+                  },
+                  "PositionOffset": {
+                    "X": 0,
+                    "Y": -0.1,
+                    "Z": 0.25
+                  }
+                }
+              ],
+              "WorldSoundEventId": "SFX_Battleaxe_T1_Swing_Charged",
+              "LocalSoundEventId": "SFX_Battleaxe_T1_Swing_Charged_Local"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

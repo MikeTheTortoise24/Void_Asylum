@@ -1,0 +1,236 @@
+{
+  "Type": "Ability",
+  "Description": "Does the room AOE bullet hell ability.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "XRange": [
+          0,
+          120
+        ],
+        "ResponseCurve": "Linear"
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 2000,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 2.5,
+  "AttackDistanceRange": [
+    0,
+    50
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    2,
+    3
+  ],
+  "Ability": {
+    "Interactions": [
+      {
+        "Type": "Parallel",
+        "Interactions": [
+          {
+            "Interactions": [
+              {
+                "Type": "ExecuteInteraction",
+                "EntityName": "Boss_Marker_Platform",
+                "Range": 50,
+                "Count": 1,
+                "RootInteractionName": "Root_Voidbreaker_Room_Circle_AOE_Visuals"
+              },
+              {
+                "Type": "Simple",
+                "RunTime": 3.0,
+                "Effects": {
+                  "WorldSoundEventId": "Void_Dragon_Spear"
+                }
+              },
+              {
+                "Type": "Simple",
+                "Effects": {
+                  "WorldSoundEventId": "Void_Dragon_Spear_Explosion"
+                }
+              },
+              "Voidbreaker_Room_AOE_Execute_Interaction_Main",
+              {
+                "Type": "Simple",
+                "RunTime": 1.5
+              }
+            ]
+          },
+          {
+            "Interactions": [
+              {
+                "Type": "Serial",
+                "Interactions": [
+                  {
+                    "Type": "ApplyForce",
+                    "Direction": {
+                      "Y": 1,
+                      "X": 0,
+                      "Z": -1
+                    },
+                    "Force": 50,
+                    "VelocityConfig": {
+                      "Threshold": 2,
+                      "Style": "Exp"
+                    },
+                    "AdjustVertical": true,
+                    "RunTime": 0.75,
+                    "Duration": 0.75,
+                    "Effects": {
+                      "Particles": [
+                        {
+                          "SystemId": "Explosion_Big",
+                          "TargetEntityPart": "Entity",
+                          "TargetNodeName": "Head",
+                          "PositionOffset": {
+                            "Y": -0.5
+                          }
+                        },
+                        {
+                          "SystemId": "Void_Dragon_Effects",
+                          "TargetEntityPart": "Entity",
+                          "TargetNodeName": "Head"
+                        }
+                      ],
+                      "WorldSoundEventId": "SFX_Golem_Firesteel_Alerted_01"
+                    },
+                    "Forces": [
+                      {
+                        "Force": 50,
+                        "Direction": {
+                          "Y": 1
+                        },
+                        "AdjustVertical": true
+                      },
+                      {
+                        "Force": 250,
+                        "Direction": {
+                          "Z": -1
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "ApplyForce",
+                    "Direction": {
+                      "Y": 1
+                    },
+                    "Force": 1,
+                    "VelocityConfig": {
+                      "Threshold": 1,
+                      "Style": "Linear"
+                    },
+                    "AdjustVertical": true,
+                    "RunTime": 30,
+                    "Duration": 30,
+                    "Effects": {
+                      "ItemPlayerAnimationsId": "Staff",
+                      "ItemAnimationId": "CastSummonCharging",
+                      "ClearAnimationOnFinish": true
+                    }
+                  },
+                  {
+                    "Type": "ApplyEffect",
+                    "EffectId": "Immunity_Fall"
+                  },
+                  {
+                    "Type": "ApplyForce",
+                    "Direction": {
+                      "Y": -1
+                    },
+                    "Force": 100,
+                    "VelocityConfig": {
+                      "Threshold": 5,
+                      "Style": "Exp",
+                      "AirResistance": 0
+                    },
+                    "Effects": {
+                      "Trails": [
+                        {
+                          "TargetEntityPart": "Entity",
+                          "TargetNodeName": "Head",
+                          "TrailId": "Bomb",
+                          "PositionOffset": {
+                            "Y": 0.5
+                          }
+                        }
+                      ],
+                      "WorldSoundEventId": "SFX_Battleaxe_T1_Launch"
+                    },
+                    "WaitForGround": true,
+                    "GroundNext": {
+                      "Type": "Selector",
+                      "Effects": {
+                        "Particles": [
+                          {
+                            "SystemId": "Mace_Signature_Ground_Hit",
+                            "TargetEntityPart": "Entity",
+                            "TargetNodeName": "Hip",
+                            "PositionOffset": {
+                              "Y": 0.1,
+                              "X": 0,
+                              "Z": -2.5
+                            },
+                            "Scale": 2
+                          },
+                          {
+                            "SystemId": "Explosion_Big",
+                            "TargetEntityPart": "Entity",
+                            "TargetNodeName": "Head",
+                            "Scale": 2
+                          },
+                          {
+                            "SystemId": "Voidbreaker_Shockwave",
+                            "TargetEntityPart": "Entity",
+                            "DetachedFromModel": true
+                          }
+                        ],
+                        "WorldSoundEventId": "SFX_Golem_Earth_Slam_Impact"
+                      },
+                      "Selector": {
+                        "Id": "AOECircle",
+                        "Range": 10,
+                        "Offset": {
+                          "X": 0,
+                          "Z": 0
+                        }
+                      },
+                      "IgnoreOwner": true,
+                      "HitEntity": {
+                        "Interactions": [
+                          {
+                            "Type": "Replace",
+                            "Var": "Ground_Slam_Damage",
+                            "DefaultOk": true,
+                            "DefaultValue": {
+                              "Interactions": [
+                                "Voidbreaker_Ground_Slam_Damage"
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "Camera": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

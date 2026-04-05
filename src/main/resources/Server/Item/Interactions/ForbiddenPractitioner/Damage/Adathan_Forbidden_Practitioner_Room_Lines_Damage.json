@@ -1,0 +1,21 @@
+{
+  "Type": "DamageEntity",
+  "Effects": {
+    "CameraEffect": "Impact_Strong"
+  },
+  "DamageEffects": {
+    "WorldSoundEventId": "SFX_Poop_Hit",
+    "WorldParticles": [
+      {
+        "SystemId": "VoidImpact"
+      }
+    ],
+    "StaminaDrainMultiplier": 2,
+    "CameraEffect": "Impact_Light"
+  },
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Environmental": 45
+    }
+  }
+}

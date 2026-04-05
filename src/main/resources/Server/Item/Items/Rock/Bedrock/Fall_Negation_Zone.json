@@ -1,0 +1,44 @@
+{
+  "TranslationProperties": {
+    "Name": "Fall Negation Zone",
+    "Description": "Gives a fall negation buff to the entity that passes through it."
+  },
+  "Icon": "Icons/ItemsGenerated/Rock_Bedrock.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Rock"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "BlockParticleSetId": "Stone",
+    "ParticleColor": "#1a1026",
+    "BlockSoundSetId": "Stone",
+    "HitboxType": "Collision_Box_Size9x9",
+    "Opacity": "Transparent",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Projectiles/Tornado_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "CustomModel": "Blocks/Miscellaneous/Map.blockymodel",
+    "Interactions": {
+      "CollisionEnter": {
+        "Interactions": [
+          {
+            "Type": "ApplyEffect",
+            "EffectId": "Adathan_Void_DragonFall_Immunity"
+          }
+        ]
+      }
+    },
+    "IgnoreSupportWhenPlaced": true
+  }
+}

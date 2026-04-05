@@ -1,0 +1,20 @@
+{
+  "Type": "Selector",
+  "Selector": {
+    "Id": "AOECircle",
+    "Range": 9.0,
+    "Offset": {
+      "Z": -0.5
+    }
+  },
+  "HitEntity": {
+    "Interactions": [
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "Adathan_Void_DragonFall_Immunity",
+        "Entity": "Target"
+      },
+      "Adathan_Void_Dragon_Pushback_Damage"
+    ]
+  }
+}

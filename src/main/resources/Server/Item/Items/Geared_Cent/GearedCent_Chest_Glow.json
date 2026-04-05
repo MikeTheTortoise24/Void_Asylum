@@ -1,0 +1,65 @@
+{
+  "TranslationProperties": {
+    "Name": "Energized Centurion Chestplate"
+  },
+  "Parent": "Armor_Iron_Chest",
+  "ItemLevel": 28,
+  "Icon": "Icons/ItemsGenerated/GearedCent_Chest_Glow.png",
+  "IconProperties": {
+    "Scale": 0.35,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -27
+    ]
+  },
+  "Model": "Items/Armor/GearedCent/DwarvenArmor_Chest.blockymodel",
+  "Texture": "Items/Armor/GearedCent/GearedCent_Chest_Texture_Glow.png",
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.09,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.09,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 22,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Bronze"
+    ],
+    "SubType": [
+      "Planks"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "Quality": "Developer"
+}

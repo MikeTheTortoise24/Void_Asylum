@@ -1,0 +1,40 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 1.0,
+      "Effects": {
+        "WorldSoundEventId": "SFX_Bow_T2_Signature_Nock",
+        "ItemAnimationId": "ThrowCharging",
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "ItemPlayerAnimationsId": "Spear"
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.1,
+      "Effects": {
+        "ItemAnimationId": "ThrowCharged",
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "ItemPlayerAnimationsId": "Spear",
+        "WorldSoundEventId": "SFX_Bow_T2_Signature_Shoot"
+      }
+    },
+    {
+      "Type": "FireProjectilesSetIntervals",
+      "ProjectileConfigName": "Adathan_Warden_Throwing_Spear",
+      "Count": 20,
+      "OffsetFromCenter": 0.1,
+      "AngledAwayFromMiddle": true
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.5
+    }
+  ]
+}

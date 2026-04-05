@@ -1,0 +1,16 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Warden_Random_AOE_Start_Sparks",
+      "PositionOffset": {
+        "Y": 0.0
+      }
+    },
+    {
+      "SpawnerId": "Warden_Random_AOE_Lines",
+      "PositionOffset": {
+        "Y": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Interactions": [
+    "Adathan_Warden_Quad_Triangle",
+    {
+      "Type": "RotateSelf",
+      "RotationY": 45
+    },
+    "Adathan_Warden_Quad_Triangle",
+    {
+      "Type": "Simple",
+      "RunTime": 0.5
+    },
+    {
+      "Type": "RemoveEntity",
+      "Entity": "Owner"
+    }
+  ]
+}

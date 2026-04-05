@@ -1,0 +1,68 @@
+{
+  "RenderMode": "Erosion",
+  "MaxConcurrentParticles": 5,
+  "ParticleLifeSpan": {
+    "Min": 6.5,
+    "Max": 6.5
+  },
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "Particle": {
+    "Texture": "Particles/Textures/Circles/Circle_Wisp.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "Animation": {
+      "0": {
+        "Opacity": 0.264,
+        "Color": "#720395"
+      },
+      "11": {
+        "Opacity": 0.9
+      },
+      "66": {},
+      "80": {
+        "Opacity": 0.876
+      },
+      "100": {
+        "Rotation": {
+          "Y": {
+            "Min": -720,
+            "Max": 720
+          }
+        },
+        "Color": "#432c58",
+        "Opacity": 0.488
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 1.0,
+      "Rotation": {
+        "X": {
+          "Min": 90,
+          "Max": 90
+        }
+      },
+      "Scale": {
+        "X": {
+          "Min": 0.2,
+          "Max": 1
+        }
+      }
+    },
+    "UseSpriteBlending": true,
+    "SoftParticlesFadeFactor": 2,
+    "FrameSize": {
+      "Width": 128,
+      "Height": 128
+    },
+    "UVOption": "RandomFlipUV"
+  },
+  "LifeSpan": 6.5,
+  "ParticleRotationInfluence": "None",
+  "IsLowRes": true,
+  "LinearFiltering": true,
+  "SpawnRate": {
+    "Min": 2,
+    "Max": 2
+  },
+  "SpawnBurst": true
+}

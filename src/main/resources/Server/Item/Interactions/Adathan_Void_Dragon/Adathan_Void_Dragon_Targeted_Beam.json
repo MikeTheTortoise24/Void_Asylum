@@ -1,0 +1,80 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.05,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "Particles": [
+          {
+            "SystemId": "Targeted_Beam",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 0.15
+            }
+          }
+        ],
+        "WorldSoundEventId": "Void_Dragon_Beam"
+      },
+      "RunTime": 2.5
+    },
+    {
+      "Type": "Explode",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Explosion_Big",
+            "TargetEntityPart": "Entity",
+            "Scale": 1
+          }
+        ]
+      },
+      "Config": {
+        "DamageEntities": true,
+        "DamageBlocks": true,
+        "EntityDamage": 25,
+        "BlockDamageRadius": 10,
+        "BlockDropChance": 0,
+        "EntityDamageFalloff": 0,
+        "Knockback": {
+          "Type": "Force",
+          "Direction": {
+            "Y": 5
+          },
+          "Force": 15
+        }
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 1.0,
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Target_Beam_Explosion",
+            "TargetEntityPart": "Entity"
+          }
+        ],
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "WorldSoundEventId": "Void_Dragon_Beam_Explode"
+      }
+    },
+    {
+      "Type": "RemoveEntity",
+      "Entity": "Owner"
+    }
+  ]
+}

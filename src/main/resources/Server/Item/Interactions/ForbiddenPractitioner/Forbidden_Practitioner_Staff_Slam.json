@@ -1,0 +1,85 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 1,
+      "Effects": {
+        "WorldSoundEventId": "SFX_Divine_Respawn",
+        "ItemPlayerAnimationsId": "Mace",
+        "ItemAnimationId": "SwingDownCharging",
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "Particles": [
+          {
+            "SystemId": "Forbidden_Practitioner_Dome",
+            "TargetEntityPart": "Entity",
+            "DetachedFromModel": true
+          },
+          {
+            "SystemId": "Adathan_Generic_Spell_Cast",
+            "Color": "#0e033a",
+            "Scale": 0.5,
+            "TargetEntityPart": "Entity"
+          },
+          {
+            "TargetNodeName": "Handle",
+            "SystemId": "Warden_Weapon_Charge",
+            "Scale": 2
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 1,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "ItemPlayerAnimationsId": "Mace",
+        "ItemAnimationId": "SwingDownCharged",
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      },
+      "RunTime": 0.2
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "AOECircle",
+        "Range": 4
+      },
+      "RunTime": 0.1,
+      "HitEntity": {
+        "Interactions": [
+          "Forbidden_Practitioner_Staff_Slam_Damage"
+        ]
+      },
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Magic_Hit",
+            "Scale": 5,
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "X": -5,
+              "Y": -4
+            }
+          }
+        ],
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "WorldSoundEventId": "SFX_Golem_Earth_Stomp_Impact"
+      }
+    }
+  ]
+}

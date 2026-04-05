@@ -1,0 +1,97 @@
+{
+  "RenderMode": "BlendAdd",
+  "ParticleRotationInfluence": "None",
+  "LinearFiltering": true,
+  "TrailSpawnerPositionMultiplier": 1.0,
+  "TrailSpawnerRotationMultiplier": 1.0,
+  "ParticleLifeSpan": {
+    "Min": 0.25,
+    "Max": 0.5
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Circles/Signature_Spin_GS2.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "UVOption": "None",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Opacity": 1,
+        "Color": "#260264",
+        "Rotation": {
+          "Z": {
+            "Min": 0.0,
+            "Max": 0.0
+          }
+        }
+      },
+      "20": {
+        "Opacity": 1.0,
+        "Color": "#9613ec"
+      },
+      "50": {
+        "Opacity": 1.0,
+        "Rotation": {
+          "Z": {
+            "Min": 200.0,
+            "Max": 200.0
+          }
+        },
+        "Color": "#5205a9"
+      },
+      "100": {
+        "Opacity": 0.024,
+        "Color": "#1c012c",
+        "Rotation": {
+          "Z": {
+            "Min": 600.0,
+            "Max": 600.0
+          }
+        },
+        "Scale": {
+          "X": {
+            "Min": 0.75,
+            "Max": 0.75
+          },
+          "Y": {
+            "Max": 0.75,
+            "Min": 0.75
+          }
+        }
+      },
+      "80": {
+        "Opacity": 0.356,
+        "Color": "#02166e"
+      }
+    },
+    "InitialAnimationFrame": {
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Scale": {
+        "X": {
+          "Min": 0.4,
+          "Max": 0.5
+        }
+      },
+      "Color": "#5b04e0",
+      "Opacity": 0.948,
+      "Rotation": {
+        "Y": {
+          "Min": 90,
+          "Max": 90
+        }
+      }
+    }
+  },
+  "SpawnRate": {
+    "Min": 25,
+    "Max": 30
+  },
+  "LifeSpan": 30,
+  "MaxConcurrentParticles": 50,
+  "ParticleRotateWithSpawner": true
+}

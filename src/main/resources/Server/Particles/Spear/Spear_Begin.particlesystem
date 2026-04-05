@@ -1,0 +1,23 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Spear_Circle",
+      "RotationOffset": {
+        "Pitch": 90
+      }
+    },
+    {
+      "SpawnerId": "Spear_Beam"
+    },
+    {
+      "SpawnerId": "Spear_Ring"
+    },
+    {
+      "StartDelay": 2.4,
+      "SpawnerId": "Spear_Explosion"
+    }
+  ],
+  "CullDistance": 1000,
+  "IsImportant": true,
+  "BoundingRadius": 1000
+}

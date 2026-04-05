@@ -1,0 +1,18 @@
+{
+  "PreventSoundInterruption": true,
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Adathan_Void_Dragon/SFX_Platform_Rumble_FadeInOut.ogg"
+      ],
+      "Volume": 6.0,
+      "RandomSettings": {
+        "MinVolume": -2,
+        "MinPitch": -6.672,
+        "MaxPitch": 7.2
+      }
+    }
+  ],
+  "Volume": 0,
+  "Parent": "SFX_Attn_Loud"
+}

@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Warden_Default_Sparks",
+      "PositionOffset": {
+        "Y": 0.25
+      }
+    }
+  ]
+}

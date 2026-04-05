@@ -1,0 +1,36 @@
+{
+  "TranslationProperties": {
+    "Name": "Voidbreaker Floating Light"
+  },
+  "Icon": "Icons/ItemsGenerated/Emitter_Firework_Mix2.png",
+  "Quality": "Technical",
+  "Categories": [
+    "Tool.Block"
+  ],
+  "BlockType": {
+    "DrawType": "Cube",
+    "RequiresAlphaBlending": true,
+    "Opacity": "Transparent",
+    "Group": "@Tech",
+    "BlockParticleSetId": "Stone",
+    "CubeShadingMode": "Flat",
+    "Light": {
+      "Color": "#60a",
+      "Radius": 8
+    },
+    "Material": "Empty",
+    "Textures": [
+      {
+        "All": "Blocks/_Debug/TextureEmpty.png"
+      }
+    ],
+    "ParticleColor": "#130049"
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Editor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone"
+}

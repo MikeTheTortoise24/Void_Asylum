@@ -1,0 +1,24 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Voidbreaker_SpinStart_Spark"
+    },
+    {
+      "SpawnerId": "Voidbreaker_SpinStart_Core"
+    },
+    {
+      "SpawnerId": "Voidbreaker_SpinStart_Glow",
+      "PositionOffset": {
+        "X": 0.0
+      }
+    },
+    {
+      "SpawnerId": "Voidbreaker_SpinStart_Circles2"
+    },
+    {
+      "SpawnerId": "Voidbreaker_SpinStart_SparksStart"
+    }
+  ],
+  "CullDistance": 100.0,
+  "IsImportant": false
+}

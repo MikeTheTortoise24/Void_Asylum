@@ -1,0 +1,341 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "Horizontal",
+        "Length": 360,
+        "Direction": "ToRight",
+        "EndDistance": 50,
+        "ExtendBottom": 100,
+        "TestLineOfSight": true,
+        "PitchOffset": -45,
+        "ExtendTop": 45
+      },
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "DefaultOk": true,
+            "Var": "Mega_AOE_Damage",
+            "DefaultValue": {
+              "Interactions": [
+                "Voidbreaker_Mega_AOE_Damage"
+              ]
+            }
+          }
+        ]
+      },
+      "RunTime": 1.0,
+      "Effects": {
+        "Particles": [
+          {
+            "TargetEntityPart": "Entity",
+            "SystemId": "Shockwave_Sphere",
+            "DetachedFromModel": true
+          },
+          {
+            "SystemId": "Voidbreaker_SpinStart",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 2.0
+            },
+            "Scale": 8,
+            "TargetNodeName": "",
+            "Color": "#3a0371"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Voidbreaker_MegaAOE"
+      }
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "Horizontal",
+        "Length": 360,
+        "Direction": "ToRight",
+        "EndDistance": 50,
+        "ExtendBottom": 100,
+        "TestLineOfSight": true,
+        "PitchOffset": -45,
+        "ExtendTop": 45
+      },
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "DefaultOk": true,
+            "Var": "Mega_AOE_Damage",
+            "DefaultValue": {
+              "Interactions": [
+                "Voidbreaker_Mega_AOE_Damage"
+              ]
+            }
+          }
+        ]
+      },
+      "RunTime": 0.75,
+      "Effects": {
+        "Particles": [
+          {
+            "TargetEntityPart": "Entity",
+            "SystemId": "Shockwave_Sphere",
+            "DetachedFromModel": true
+          },
+          {
+            "SystemId": "Voidbreaker_SpinStart",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 2.0
+            },
+            "Scale": 8,
+            "TargetNodeName": "",
+            "Color": "#3a0371"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Voidbreaker_MegaAOE"
+      }
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "Horizontal",
+        "Length": 360,
+        "Direction": "ToRight",
+        "EndDistance": 50,
+        "ExtendBottom": 100,
+        "TestLineOfSight": true,
+        "PitchOffset": -45,
+        "ExtendTop": 45
+      },
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "DefaultOk": true,
+            "Var": "Mega_AOE_Damage",
+            "DefaultValue": {
+              "Interactions": [
+                "Voidbreaker_Mega_AOE_Damage"
+              ]
+            }
+          }
+        ]
+      },
+      "RunTime": 0.6,
+      "Effects": {
+        "Particles": [
+          {
+            "TargetEntityPart": "Entity",
+            "SystemId": "Shockwave_Sphere",
+            "DetachedFromModel": true
+          },
+          {
+            "SystemId": "Voidbreaker_SpinStart",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 2.0
+            },
+            "Scale": 8,
+            "TargetNodeName": "",
+            "Color": "#3a0371"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Voidbreaker_MegaAOE"
+      }
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "Horizontal",
+        "Length": 360,
+        "Direction": "ToRight",
+        "EndDistance": 50,
+        "ExtendBottom": 100,
+        "TestLineOfSight": true,
+        "PitchOffset": -45,
+        "ExtendTop": 45
+      },
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "DefaultOk": true,
+            "Var": "Mega_AOE_Damage",
+            "DefaultValue": {
+              "Interactions": [
+                "Voidbreaker_Mega_AOE_Damage"
+              ]
+            }
+          }
+        ]
+      },
+      "RunTime": 0.5,
+      "Effects": {
+        "Particles": [
+          {
+            "TargetEntityPart": "Entity",
+            "SystemId": "Shockwave_Sphere",
+            "DetachedFromModel": true
+          },
+          {
+            "SystemId": "Voidbreaker_SpinStart",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 2.0
+            },
+            "Scale": 8,
+            "TargetNodeName": "",
+            "Color": "#3a0371"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Voidbreaker_MegaAOE"
+      }
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "Horizontal",
+        "Length": 360,
+        "Direction": "ToRight",
+        "EndDistance": 50,
+        "ExtendBottom": 100,
+        "TestLineOfSight": true,
+        "PitchOffset": -45,
+        "ExtendTop": 45
+      },
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "DefaultOk": true,
+            "Var": "Mega_AOE_Damage",
+            "DefaultValue": {
+              "Interactions": [
+                "Voidbreaker_Mega_AOE_Damage"
+              ]
+            }
+          }
+        ]
+      },
+      "RunTime": 0.3,
+      "Effects": {
+        "Particles": [
+          {
+            "TargetEntityPart": "Entity",
+            "SystemId": "Shockwave_Sphere",
+            "DetachedFromModel": true
+          },
+          {
+            "SystemId": "Voidbreaker_SpinStart",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 2.0
+            },
+            "Scale": 8,
+            "TargetNodeName": "",
+            "Color": "#3a0371"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Voidbreaker_MegaAOE"
+      }
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "Horizontal",
+        "Length": 360,
+        "Direction": "ToRight",
+        "EndDistance": 50,
+        "ExtendBottom": 100,
+        "TestLineOfSight": true,
+        "PitchOffset": -45,
+        "ExtendTop": 45
+      },
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "DefaultOk": true,
+            "Var": "Mega_AOE_Damage",
+            "DefaultValue": {
+              "Interactions": [
+                "Voidbreaker_Mega_AOE_Damage"
+              ]
+            }
+          }
+        ]
+      },
+      "RunTime": 0.25,
+      "Effects": {
+        "Particles": [
+          {
+            "TargetEntityPart": "Entity",
+            "SystemId": "Shockwave_Sphere",
+            "DetachedFromModel": true
+          },
+          {
+            "SystemId": "Voidbreaker_SpinStart",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 2.0
+            },
+            "Scale": 8,
+            "TargetNodeName": "",
+            "Color": "#3a0371"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Voidbreaker_MegaAOE"
+      }
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "Horizontal",
+        "Length": 360,
+        "Direction": "ToRight",
+        "EndDistance": 50,
+        "ExtendBottom": 100,
+        "TestLineOfSight": true,
+        "PitchOffset": -45,
+        "ExtendTop": 45
+      },
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "DefaultOk": true,
+            "Var": "Mega_AOE_Damage",
+            "DefaultValue": {
+              "Interactions": [
+                "Voidbreaker_Mega_AOE_Damage"
+              ]
+            }
+          }
+        ]
+      },
+      "RunTime": 0.25,
+      "Effects": {
+        "Particles": [
+          {
+            "TargetEntityPart": "Entity",
+            "SystemId": "Shockwave_Sphere",
+            "DetachedFromModel": true
+          },
+          {
+            "SystemId": "Voidbreaker_SpinStart",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 2.0
+            },
+            "Scale": 8,
+            "TargetNodeName": "",
+            "Color": "#3a0371"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Voidbreaker_MegaAOE"
+      }
+    }
+  ]
+}

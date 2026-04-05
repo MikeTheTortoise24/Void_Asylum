@@ -1,0 +1,27 @@
+{
+  "Type": "DamageEntity",
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Elemental": 15
+    }
+  },
+  "Effects": {
+    "CameraEffect": "Impact_Strong"
+  },
+  "DamageEffects": {
+    "Knockback": {
+      "Type": "Force",
+      "Direction": {
+        "Y": 1
+      },
+      "Force": 10
+    },
+    "WorldSoundEventId": "SFX_Fireball_Death",
+    "WorldParticles": [
+      {
+        "SystemId": "VoidImpact"
+      }
+    ],
+    "CameraEffect": "Impact_Light"
+  }
+}

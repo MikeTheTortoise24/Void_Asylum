@@ -1,0 +1,19 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Warden_Pull_Slam_Triangle",
+      "PositionOffset": {
+        "Y": 0.2,
+        "Z": -6
+      }
+    },
+    {
+      "SpawnerId": "Warden_Pull_Slam_Triangle_Opaque",
+      "PositionOffset": {
+        "Y": 0.2,
+        "Z": -6
+      }
+    }
+  ],
+  "IsImportant": true
+}

@@ -1,0 +1,86 @@
+{
+  "RenderMode": "Erosion",
+  "MaxConcurrentParticles": 1,
+  "ParticleLifeSpan": {
+    "Min": 7,
+    "Max": 7
+  },
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "Particle": {
+    "Texture": "Particles/Textures/Circles/portal3.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "Animation": {
+      "0": {
+        "Opacity": 0,
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Color": "#f90303"
+      },
+      "80": {
+        "Opacity": 0.284,
+        "FrameIndex": {
+          "Min": 3,
+          "Max": 3
+        }
+      },
+      "100": {
+        "Opacity": 0,
+        "FrameIndex": {
+          "Min": 3,
+          "Max": 3
+        },
+        "Rotation": {
+          "Y": {
+            "Min": 180,
+            "Max": 180
+          }
+        },
+        "Color": "#a20909"
+      },
+      "33": {
+        "FrameIndex": {
+          "Min": 1,
+          "Max": 1
+        },
+        "Opacity": 0.7
+      },
+      "66": {
+        "FrameIndex": {
+          "Min": 2,
+          "Max": 2
+        },
+        "Opacity": 0.86
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 1.0,
+      "Rotation": {
+        "X": {
+          "Min": 90,
+          "Max": 90
+        }
+      },
+      "Scale": {
+        "X": {
+          "Min": 2,
+          "Max": 2
+        }
+      }
+    },
+    "UseSpriteBlending": true,
+    "SoftParticlesFadeFactor": 2,
+    "FrameSize": {
+      "Width": 128,
+      "Height": 128
+    },
+    "UVOption": "RandomFlipUV"
+  },
+  "LifeSpan": 7,
+  "SpawnBurst": true,
+  "ParticleRotationInfluence": "None",
+  "IsLowRes": true,
+  "LinearFiltering": true
+}

@@ -1,0 +1,36 @@
+{
+  "Type": "Ability",
+  "Description": "Dash Foward",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 1
+      }
+    },
+    {
+      "Type": "TargetDistance",
+      "Curve": {
+        "XRange": [
+          5,
+          10
+        ],
+        "ResponseCurve": "Linear"
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 2.5,
+  "AttackDistanceRange": [
+    5,
+    30
+  ],
+  "AbilityType": "Primary",
+  "Ability": "Root_Voidbreaker_Dash_Forward",
+  "PostExecuteDistanceRange": [
+    2,
+    3
+  ],
+  "SubState": "Default"
+}

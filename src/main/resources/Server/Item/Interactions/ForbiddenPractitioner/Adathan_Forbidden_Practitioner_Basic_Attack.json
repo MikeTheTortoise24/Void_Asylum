@@ -1,0 +1,17 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Staff",
+    "ItemAnimationId": "CastSummon",
+    "WorldSoundEventId": "SFX_Staff_Charged_Loop",
+    "ClearSoundEventOnFinish": true
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 1.25,
+  "Next": {
+    "Type": "FireProjectilesSetIntervals",
+    "ProjectileConfigName": "Forbidden_Practitioner_Basic_Attack",
+    "OffsetFromCenter": 1.0,
+    "Count": 3
+  }
+}

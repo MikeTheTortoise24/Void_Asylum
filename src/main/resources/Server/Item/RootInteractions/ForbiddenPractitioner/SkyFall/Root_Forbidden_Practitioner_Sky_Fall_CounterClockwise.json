@@ -1,0 +1,46 @@
+{
+  "Tags": {
+    "Attack": [
+      "Ranged"
+    ]
+  },
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.05
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.1,
+      "Effects": {}
+    },
+    {
+      "Type": "Repeat",
+      "Repeat": 6,
+      "ForkInteractions": {
+        "Interactions": [
+          {
+            "Type": "Projectile",
+            "Config": "Forbidden_Practitioner_Sky_Projectile_TenBlocks"
+          },
+          {
+            "Type": "RotateSelf",
+            "RotationY": 60
+          },
+          {
+            "Type": "Simple",
+            "RunTime": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Projectile",
+      "Config": "Forbidden_Practitioner_Sky_Projectile"
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 6
+    }
+  ]
+}

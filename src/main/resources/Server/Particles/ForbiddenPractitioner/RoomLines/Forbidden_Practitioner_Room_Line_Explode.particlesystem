@@ -1,0 +1,12 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Lines_Explode",
+      "PositionOffset": {
+        "Y": 0.5
+      }
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 1000
+}

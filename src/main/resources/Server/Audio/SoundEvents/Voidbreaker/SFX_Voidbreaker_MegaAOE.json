@@ -1,0 +1,25 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Staff/Flame/Staff_Flame_Fireball_Launch_01.ogg",
+        "Sounds/Weapons/Staff/Flame/Staff_Flame_Fireball_Launch_02.ogg",
+        "Sounds/Weapons/Staff/Flame/Staff_Flame_Fireball_Launch_03.ogg",
+        "Sounds/Weapons/Staff/Flame/Staff_Flame_Fireball_Launch_04.ogg"
+      ],
+      "Volume": 0,
+      "RandomSettings": {
+        "MinVolume": -1,
+        "MinPitch": -2,
+        "MaxPitch": 2
+      },
+      "StartDelay": 0
+    }
+  ],
+  "Volume": 2,
+  "PreventSoundInterruption": true,
+  "AudioCategory": "AudioCat_Magic_Staff",
+  "Parent": "SFX_Attn_VeryLoud",
+  "MaxDistance": 80,
+  "StartAttenuationDistance": 12
+}

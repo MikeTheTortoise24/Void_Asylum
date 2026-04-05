@@ -1,0 +1,13 @@
+{
+  "Interactions": [
+    {
+      "Type": "Chaining",
+      "ChainId": "Slashes",
+      "ChainingAllowance": 5,
+      "Next": [
+        "Voidbreaker_Swing_Left",
+        "Voidbreaker_Swing_Right"
+      ]
+    }
+  ]
+}

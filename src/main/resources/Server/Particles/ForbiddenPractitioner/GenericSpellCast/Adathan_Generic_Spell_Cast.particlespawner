@@ -1,0 +1,59 @@
+{
+  "LifeSpan": 1.5,
+  "ParticleLifeSpan": {
+    "Min": 1.5,
+    "Max": 1.5
+  },
+  "ParticleRotationInfluence": "None",
+  "LinearFiltering": true,
+  "Particle": {
+    "Texture": "Particles/Textures/Circles/Portal_Runic2.png",
+    "Animation": {
+      "0": {
+        "Opacity": 0.666
+      },
+      "100": {
+        "Rotation": {
+          "Z": {
+            "Min": 360,
+            "Max": 720
+          },
+          "Y": {
+            "Min": 180,
+            "Max": 720
+          },
+          "X": {
+            "Max": 720,
+            "Min": 180
+          }
+        },
+        "Opacity": 0,
+        "Scale": {
+          "X": {
+            "Min": 0.1,
+            "Max": 0.1
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Rotation": {
+        "Y": {
+          "Max": 90
+        },
+        "X": {
+          "Max": 90
+        }
+      },
+      "Scale": {
+        "X": {
+          "Min": 0.5,
+          "Max": 1
+        }
+      }
+    }
+  },
+  "MaxConcurrentParticles": 16,
+  "SpawnBurst": true,
+  "RenderMode": "BlendLinear"
+}

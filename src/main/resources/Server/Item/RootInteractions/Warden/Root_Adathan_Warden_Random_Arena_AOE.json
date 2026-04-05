@@ -1,0 +1,13 @@
+{
+  "Interactions": [
+    "Adathan_Warden_Random_Arena_AOE",
+    {
+      "Type": "Simple",
+      "RunTime": 0.5
+    },
+    {
+      "Type": "RemoveEntity",
+      "Entity": "Owner"
+    }
+  ]
+}

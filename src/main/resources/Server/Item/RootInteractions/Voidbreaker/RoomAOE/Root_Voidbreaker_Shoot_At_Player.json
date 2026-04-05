@@ -1,0 +1,16 @@
+{
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "WorldSoundEventId": "SFX_Eye_Void_Attack_Blast"
+      }
+    },
+    {
+      "Type": "FireProjectilesSetIntervals",
+      "ProjectileConfigName": "Voidbreaker_Arena_Projectile_Green",
+      "Count": 15,
+      "OffsetFromCenter": 2
+    }
+  ]
+}

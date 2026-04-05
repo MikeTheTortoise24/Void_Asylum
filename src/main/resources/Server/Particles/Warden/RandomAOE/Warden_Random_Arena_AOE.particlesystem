@@ -1,0 +1,18 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Warden_Random_Arena_AOE_Floor",
+      "PositionOffset": {
+        "Y": 0.2
+      }
+    },
+    {
+      "SpawnerId": "Warden_Random_Arena_AOE_Floor_Small",
+      "PositionOffset": {
+        "Y": 0.1
+      }
+    }
+  ],
+  "BoundingRadius": 100,
+  "IsImportant": true
+}

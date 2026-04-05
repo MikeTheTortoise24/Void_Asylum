@@ -1,0 +1,65 @@
+{
+  "TranslationProperties": {
+    "Name": "Energized Centurion Gauntlets"
+  },
+  "Parent": "Armor_Iron_Hands",
+  "ItemLevel": 28,
+  "Icon": "Icons/ItemsGenerated/Geared_Cent_Hands_Glow.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0.3,
+      -15
+    ]
+  },
+  "Model": "Items/Armor/GearedCent/DwarvenArmor_Hands.blockymodel",
+  "Texture": "Items/Armor/GearedCent/GearedCent_Hands_Texture_Glow.png",
+  "Armor": {
+    "ArmorSlot": "Hands",
+    "BaseDamageResistance": 0,
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.04,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.04,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 10,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "CosmeticsToHide": [
+      "Gloves"
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Bronze"
+    ],
+    "SubType": [
+      "Planks"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "Quality": "Developer"
+}

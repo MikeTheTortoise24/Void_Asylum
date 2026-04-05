@@ -1,0 +1,171 @@
+{
+  "Type": "Ability",
+  "Description": "Phase 2 change and cutscene.",
+  "Conditions": [
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 2500,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    },
+    {
+      "Type": "SelfHasEffect",
+      "EffectId": "Adathan_Warden_Phase2",
+      "FalseValue": 1,
+      "TrueValue": 0
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 10,
+  "AttackDistanceRange": [
+    0,
+    10
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    2,
+    2.8
+  ],
+  "SubState": "Default",
+  "Ability": {
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "RunTime": 0.1,
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "WorldSoundEventId": "SFX_Warden_Phase2_Enough",
+          "Particles": [
+            {
+              "SystemId": "Warden_Phase2_Start",
+              "TargetEntityPart": "Entity",
+              "DetachedFromModel": true
+            }
+          ]
+        },
+        "Next": {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Adathan_Warden_Phase2"
+        }
+      },
+      {
+        "Type": "Selector",
+        "Selector": {
+          "Id": "AOECircle",
+          "Range": 20
+        },
+        "IgnoreOwner": true,
+        "HitEntityRules": [
+          {
+            "Matchers": [
+              {
+                "Type": "Player"
+              }
+            ],
+            "Next": {
+              "Interactions": [
+                {
+                  "Type": "ApplyEffect",
+                  "EffectId": "Stun",
+                  "Entity": "Target"
+                },
+                "Adathan_Warden_Phase_Change_Damage_Force",
+                {
+                  "Type": "Simple",
+                  "RunTime": 9.7
+                },
+                {
+                  "Type": "ApplyEffect",
+                  "Entity": "Target",
+                  "EffectId": "Immunity_Fall",
+                  "RunTime": 0.1
+                },
+                "Adathan_Warden_Phase_Change_Player_Slam"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Type": "Simple",
+        "RunTime": 2.5,
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          }
+        }
+      },
+      {
+        "Type": "Parallel",
+        "Interactions": [
+          {
+            "Interactions": [
+              {
+                "Type": "Simple",
+                "RunTime": 7.0,
+                "Effects": {
+                  "MovementEffects": {
+                    "DisableAll": true
+                  },
+                  "WorldSoundEventId": "SFX_Warden_Phase2_Change"
+                }
+              },
+              {
+                "Type": "Simple",
+                "Next": {
+                  "Type": "ApplyEffect",
+                  "Entity": "Owner",
+                  "EffectId": "Adathan_Warden_Phase2"
+                },
+                "RunTime": 0.5,
+                "Effects": {
+                  "MovementEffects": {
+                    "DisableAll": true
+                  }
+                }
+              },
+              {
+                "Type": "Simple",
+                "RunTime": 0.5
+              }
+            ]
+          },
+          {
+            "Interactions": [
+              {
+                "Type": "Selector",
+                "Selector": {
+                  "Id": "AOECylinder",
+                  "Range": 30,
+                  "Height": 2,
+                  "Offset": {
+                    "Y": -1
+                  }
+                },
+                "RunTime": 0.1,
+                "HitBlock": {
+                  "Interactions": [
+                    {
+                      "Type": "ChangeBlock",
+                      "Changes": {
+                        "Rock_Crystal_White_Block": "Soil_Hive_Corrupted",
+                        "Rock_Crystal_Yellow_Block": "Rock_Crystal_Purple_Block"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

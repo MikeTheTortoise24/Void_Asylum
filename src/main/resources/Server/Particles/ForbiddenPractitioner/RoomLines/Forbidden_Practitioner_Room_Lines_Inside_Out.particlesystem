@@ -1,0 +1,175 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Line_Lines",
+      "PositionOffset": {
+        "Y": 0.5
+      }
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Line_Lines",
+      "PositionOffset": {
+        "Y": 0.5
+      },
+      "RotationOffset": {
+        "Yaw": 180
+      }
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Lines_Center",
+      "PositionOffset": {
+        "Y": 0.5
+      }
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Lines_Explode",
+      "PositionOffset": {
+        "Y": 0.5
+      },
+      "StartDelay": 2.5
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Line_Lines",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": -9
+      },
+      "StartDelay": 2
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Line_Lines",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": -9
+      },
+      "RotationOffset": {
+        "Yaw": 180
+      },
+      "StartDelay": 2
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Lines_Center",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": -9
+      },
+      "StartDelay": 2
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Line_Lines",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": 9
+      },
+      "StartDelay": 2
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Line_Lines",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": 9
+      },
+      "RotationOffset": {
+        "Yaw": 180
+      },
+      "StartDelay": 2
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Lines_Center",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": 9
+      },
+      "StartDelay": 2
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Lines_Explode",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": 9
+      },
+      "StartDelay": 4.5
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Lines_Explode",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": -9
+      },
+      "StartDelay": 4.5
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Line_Lines",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": -5
+      },
+      "StartDelay": 1
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Line_Lines",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": -5
+      },
+      "StartDelay": 1,
+      "RotationOffset": {
+        "Yaw": 180
+      }
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Lines_Center",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": 5
+      },
+      "StartDelay": 1
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Line_Lines",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": 5
+      },
+      "StartDelay": 1
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Line_Lines",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": 5
+      },
+      "StartDelay": 1,
+      "RotationOffset": {
+        "Yaw": 180
+      }
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Lines_Center",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": -5
+      },
+      "StartDelay": 1
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Lines_Explode",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": 5
+      },
+      "StartDelay": 3.5
+    },
+    {
+      "SpawnerId": "Forbidden_Practitioner_Room_Lines_Explode",
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": -5
+      },
+      "StartDelay": 3.5
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 1000,
+  "BoundingRadius": 1000
+}

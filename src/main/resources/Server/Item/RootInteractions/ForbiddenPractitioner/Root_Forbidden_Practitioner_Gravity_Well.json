@@ -1,0 +1,95 @@
+{
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.05
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Gravity_Well_Orb",
+            "TargetEntityPart": "Entity"
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Repeat",
+      "Repeat": 50,
+      "ForkInteractions": {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "HitEntityRules": [
+              {
+                "Matchers": [
+                  {
+                    "Type": "Player"
+                  }
+                ],
+                "Next": {
+                  "Interactions": [
+                    "Adathan_Forbidden_Practitioner_Gravity_Well_Pull_Damage"
+                  ]
+                }
+              }
+            ],
+            "Selector": {
+              "Id": "AOECircle",
+              "Range": 8
+            }
+          },
+          {
+            "Type": "Simple",
+            "RunTime": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Selector",
+      "HitEntityRules": [
+        {
+          "Matchers": [
+            {
+              "Type": "Player"
+            }
+          ],
+          "Next": {
+            "Interactions": [
+              {
+                "Type": "ApplyEffect",
+                "EffectId": "Adathan_Void_DragonFall_Immunity",
+                "Entity": "Target"
+              },
+              "Adathan_Forbidden_Practitioner_Gravity_Well_Explode_Damage"
+            ]
+          }
+        }
+      ],
+      "Selector": {
+        "Id": "AOECircle",
+        "Range": 5.5
+      },
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Gravity_Well_Explode",
+            "TargetEntityPart": "Entity"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Forbidden_Practitioner_Gravity_Well_Explode"
+      },
+      "RunTime": 0.1
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 1.5
+    },
+    {
+      "Type": "RemoveEntity"
+    }
+  ]
+}

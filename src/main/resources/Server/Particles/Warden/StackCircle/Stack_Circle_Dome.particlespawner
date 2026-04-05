@@ -1,0 +1,73 @@
+{
+  "RenderMode": "BlendLinear",
+  "ParticleRotationInfluence": "Billboard",
+  "LinearFiltering": true,
+  "TrailSpawnerPositionMultiplier": 1.0,
+  "TrailSpawnerRotationMultiplier": 1.0,
+  "ParticleLifeSpan": {
+    "Min": 1,
+    "Max": 1.5
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Star2.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "Animation": {
+      "0": {
+        "Opacity": 0.816,
+        "Color": "#f9f9f9"
+      },
+      "100": {
+        "Color": "#f6f6f6",
+        "Scale": {
+          "X": {
+            "Min": 0.1,
+            "Max": 0.1
+          }
+        },
+        "Rotation": {
+          "Z": {
+            "Max": 36,
+            "Min": -36
+          }
+        }
+      },
+      "50": {
+        "Color": "#f0e400"
+      }
+    },
+    "InitialAnimationFrame": {
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Color": "#a00303",
+      "Scale": {
+        "X": {
+          "Min": 0.05,
+          "Max": 0.2
+        }
+      }
+    }
+  },
+  "LifeSpan": 5,
+  "MaxConcurrentParticles": 1000,
+  "SpawnRate": {
+    "Min": 500,
+    "Max": 500
+  },
+  "EmitOffset": {
+    "X": {
+      "Min": 3.2,
+      "Max": 3.2
+    },
+    "Z": {
+      "Min": 3.2,
+      "Max": 3.2
+    },
+    "Y": {
+      "Min": 3.2,
+      "Max": 3.2
+    }
+  },
+  "Shape": "Sphere"
+}

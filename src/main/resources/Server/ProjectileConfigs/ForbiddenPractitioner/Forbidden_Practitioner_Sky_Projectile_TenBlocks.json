@@ -1,0 +1,62 @@
+{
+  "Model": "Forbidden_Practitioner_Sky_Projectile",
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 9.8,
+    "TerminalVelocityAir": 42.5,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "Velocity",
+    "SticksVertically": true
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        "Adathan_Forbidden_Practitioner_Basic_Projectile_Damage",
+        "Adathan_Forbidden_Practitioner_Sky_Projectile_Explode",
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User"
+        }
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Adathan_Forbidden_Practitioner_Sky_Projectile_Explode",
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User"
+        }
+      ]
+    },
+    "ProjectileSpawn": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 0.05
+        },
+        {
+          "Type": "Simple",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Sky_Fall_Ground_Indicator",
+                "TargetEntityPart": "Entity",
+                "DetachedFromModel": true,
+                "PositionOffset": {
+                  "Z": 15.7
+                },
+                "RotationOffset": {}
+              }
+            ]
+          },
+          "RunTime": 1
+        }
+      ]
+    }
+  },
+  "SpawnOffset": {
+    "Y": 16,
+    "Z": -10
+  },
+  "LaunchForce": 0
+}

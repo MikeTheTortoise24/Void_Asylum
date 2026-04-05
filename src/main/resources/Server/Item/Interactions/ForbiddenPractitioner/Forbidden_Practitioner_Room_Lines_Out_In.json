@@ -1,0 +1,260 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 2.3,
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Forbidden_Practitioner_Room_Lines_Outside_In",
+            "TargetEntityPart": "Entity",
+            "DetachedFromModel": true
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Parallel",
+      "Interactions": [
+        {
+          "Type": "Selector",
+          "Selector": {
+            "Id": "Stab",
+            "StartDistance": -15,
+            "EndDistance": 15,
+            "ExtendTop": 3,
+            "ExtendLeft": 15,
+            "ExtendRight": -10
+          },
+          "RunTime": 1,
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "Selector": {
+                "Id": "Stab",
+                "StartDistance": -15,
+                "EndDistance": 15,
+                "ExtendTop": 3,
+                "ExtendLeft": 15,
+                "ExtendRight": -11
+              },
+              "RunTime": 0.25,
+              "HitEntityRules": [
+                {
+                  "Matchers": [
+                    {
+                      "Type": "Player"
+                    }
+                  ],
+                  "Next": {
+                    "Interactions": [
+                      "Adathan_Forbidden_Practitioner_Room_Lines_Damage"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "Selector": {
+                "Id": "Stab",
+                "StartDistance": -15,
+                "EndDistance": 15,
+                "ExtendTop": 3,
+                "ExtendLeft": -11,
+                "ExtendRight": 15
+              },
+              "RunTime": 0.25,
+              "HitEntityRules": [
+                {
+                  "Matchers": [
+                    {
+                      "Type": "Player"
+                    }
+                  ],
+                  "Next": {
+                    "Interactions": [
+                      "Adathan_Forbidden_Practitioner_Room_Lines_Damage"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Effects": {
+        "WorldSoundEventId": "SFX_Forbidden_Practitioner_Room_Lines_Explode"
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.75
+    },
+    {
+      "Type": "Parallel",
+      "Interactions": [
+        {
+          "Type": "Selector",
+          "Selector": {
+            "Id": "Stab",
+            "StartDistance": -15,
+            "EndDistance": 15,
+            "ExtendTop": 3,
+            "ExtendLeft": 15,
+            "ExtendRight": -10
+          },
+          "RunTime": 1,
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "Selector": {
+                "Id": "Stab",
+                "StartDistance": -15,
+                "EndDistance": 15,
+                "ExtendTop": 3,
+                "ExtendLeft": 11,
+                "ExtendRight": -7
+              },
+              "RunTime": 0.25,
+              "HitEntityRules": [
+                {
+                  "Matchers": [
+                    {
+                      "Type": "Player"
+                    }
+                  ],
+                  "Next": {
+                    "Interactions": [
+                      "Adathan_Forbidden_Practitioner_Room_Lines_Damage"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "Selector": {
+                "Id": "Stab",
+                "StartDistance": -15,
+                "EndDistance": 15,
+                "ExtendTop": 3,
+                "ExtendLeft": -7,
+                "ExtendRight": 11
+              },
+              "RunTime": 0.25,
+              "HitEntityRules": [
+                {
+                  "Matchers": [
+                    {
+                      "Type": "Player"
+                    }
+                  ],
+                  "Next": {
+                    "Interactions": [
+                      "Adathan_Forbidden_Practitioner_Room_Lines_Damage"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Effects": {
+        "WorldSoundEventId": "SFX_Forbidden_Practitioner_Room_Lines_Explode"
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.75
+    },
+    {
+      "Type": "Parallel",
+      "Interactions": [
+        {
+          "Type": "Selector",
+          "Selector": {
+            "Id": "Stab",
+            "StartDistance": -15,
+            "EndDistance": 15,
+            "ExtendTop": 3,
+            "ExtendLeft": 15,
+            "ExtendRight": -10
+          },
+          "RunTime": 1,
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "Selector": {
+                "Id": "Stab",
+                "StartDistance": -15,
+                "EndDistance": 15,
+                "ExtendTop": 3,
+                "ExtendLeft": 7,
+                "ExtendRight": -3
+              },
+              "RunTime": 0.25,
+              "HitEntityRules": [
+                {
+                  "Matchers": [
+                    {
+                      "Type": "Player"
+                    }
+                  ],
+                  "Next": {
+                    "Interactions": [
+                      "Adathan_Forbidden_Practitioner_Room_Lines_Damage"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "Selector": {
+                "Id": "Stab",
+                "StartDistance": -15,
+                "EndDistance": 15,
+                "ExtendTop": 3,
+                "ExtendLeft": -3,
+                "ExtendRight": 7
+              },
+              "RunTime": 0.25,
+              "HitEntityRules": [
+                {
+                  "Matchers": [
+                    {
+                      "Type": "Player"
+                    }
+                  ],
+                  "Next": {
+                    "Interactions": [
+                      "Adathan_Forbidden_Practitioner_Room_Lines_Damage"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Effects": {
+        "WorldSoundEventId": "SFX_Forbidden_Practitioner_Room_Lines_Explode"
+      }
+    }
+  ]
+}

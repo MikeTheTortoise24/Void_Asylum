@@ -1,0 +1,69 @@
+{
+  "TranslationProperties": {
+    "Name": "Void Stone"
+  },
+  "ItemLevel": 10,
+  "MaxStack": 100,
+  "Icon": "Icons/ItemsGenerated/Rock_Bedrock.png",
+  "Categories": [
+    "Blocks.Rocks"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Rock_Stone",
+  "BlockType": {
+    "DrawType": "CubeWithModel",
+    "Group": "Stone",
+    "BlockParticleSetId": "Void_Stone_BreakParticles",
+    "Textures": [
+      {
+        "All": "BlockTextures/Rock_Bedrock.png",
+        "Weight": 2
+      }
+    ],
+    "ParticleColor": "#000000",
+    "BlockSoundSetId": "Void_Block_SoundSet",
+    "BlockBreakingDecalId": "Breaking_Decals_Rock",
+    "Particles": [
+      {
+        "SystemId": "VoidImpact",
+        "Scale": 3,
+        "TargetNodeName": "Fire"
+      },
+      {
+        "SystemId": "Lightning",
+        "Color": "#010000"
+      }
+    ],
+    "Light": {
+      "Color": "#b5e",
+      "Radius": 0
+    },
+    "AmbientSoundEventId": "SFX_Portal_Void",
+    "CustomModelScale": 5,
+    "CustomModel": "Resources/Ores/Gem.blockymodel",
+    "Material": "Solid",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Resources/Ores/Gem_Textures/Voidstone.png"
+      }
+    ],
+    "HitboxType": "Void_Stone_T3x3",
+    "RandomRotation": "YawStep90",
+    "VariantRotation": "All",
+    "Tint": [
+      "#0f0128"
+    ],
+    "Opacity": "Transparent",
+    "RequiresAlphaBlending": false,
+    "Effect": [
+      "Ripple"
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Rock"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone"
+}

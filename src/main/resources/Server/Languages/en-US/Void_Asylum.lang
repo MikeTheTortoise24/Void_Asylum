@@ -1,0 +1,17 @@
+portals.name=Void Asylum - Raid
+portals.description=The Void Asylum Raid, dodge above all else!
+portals.tip1=<color is="#05c09a>Recommended for 1/2 player(s) max!</color>
+portals.tip2=<color is="#b80b0b>Adamantite armor strongly advised.</color>
+portals.tip3=<color is="#05c09a>Make sure to use third person.</color>
+portals.tip4=<color is="#05c09a>Don't stand still.</color>
+portals.tip5=<color is="#32CD32>Use your weapon's movement abilities!</color>
+portals.tip6=<color is="#b80b0b>Each boss has a unique weapon drop.</color>
+
+
+items.PortalKey.name=Fragment: Void Asylum - Raid (HARD)
+items.PortalKey.description=The Void Asylum holds four unique bosses.\nTake them down for a chance at each of their unique weapons!
+
+items.Voidbreaker_Lament.name="Voidbreaker's Lament"
+items.Gravity_Staff.name="Gravity Staff"
+items.Abyssal_Helix_Spear.name="Abyssal Helix Spear"
+items.Repulsion_Bow.name="Repulsion Bow"

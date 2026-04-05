@@ -1,0 +1,137 @@
+{
+  "RenderMode": "Erosion",
+  "EmitOffset": {
+    "X": {
+      "Min": 0,
+      "Max": 0
+    },
+    "Y": {
+      "Min": 0,
+      "Max": 0
+    },
+    "Z": {
+      "Min": 0,
+      "Max": 0
+    }
+  },
+  "ParticleRotationInfluence": "None",
+  "LinearFiltering": true,
+  "LightInfluence": 0.6,
+  "ParticleLifeSpan": {
+    "Min": 3,
+    "Max": 3.5
+  },
+  "ParticleRotateWithSpawner": false,
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "SpawnRate": {
+    "Min": 1.0,
+    "Max": 1.0
+  },
+  "TotalParticles": {
+    "Min": 3,
+    "Max": 3
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Shapes/Crack.png",
+    "FrameSize": {},
+    "ScaleRatioConstraint": "OneToOne",
+    "Animation": {
+      "0": {
+        "Scale": {
+          "X": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "Y": {
+            "Min": 1,
+            "Max": 1
+          }
+        },
+        "Opacity": 1.0,
+        "FrameIndex": {},
+        "Color": "#f0e9e9"
+      },
+      "20": {
+        "Color": "#ec6666"
+      },
+      "50": {
+        "Opacity": 0.8,
+        "Color": "#ea3535"
+      },
+      "70": {
+        "Color": "#ff0000"
+      },
+      "100": {
+        "Opacity": 0.0,
+        "FrameIndex": {},
+        "Color": "#828282",
+        "Rotation": {
+          "Y": {
+            "Max": 180
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 4.5,
+          "Max": 4.5
+        },
+        "Y": {
+          "Min": 0,
+          "Max": 0
+        }
+      },
+      "Opacity": 1.0,
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Rotation": {
+        "X": {
+          "Min": 90,
+          "Max": 90
+        },
+        "Z": {
+          "Max": 360.0,
+          "Min": 0.0
+        }
+      },
+      "Color": "#ee0000"
+    },
+    "CollisionAnimationFrame": {
+      "FrameIndex": {},
+      "Scale": {
+        "X": {
+          "Min": 0,
+          "Max": 0
+        }
+      }
+    },
+    "UVOption": "None",
+    "SoftParticles": "Disable"
+  },
+  "IsLowRes": false,
+  "UVMotion": {
+    "Strength": 1.2,
+    "Scale": 1,
+    "SpeedY": 0.72,
+    "SpeedX": 0.19
+  },
+  "SpawnBurst": true,
+  "IntersectionHighlight": {
+    "HighlightThreshold": 0
+  },
+  "WaveDelay": {
+    "Min": 0,
+    "Max": 0
+  },
+  "MaxConcurrentParticles": 3,
+  "ParticleCollision": {
+    "BlockType": "Solid",
+    "Action": "Linger"
+  },
+  "LifeSpan": 4
+}

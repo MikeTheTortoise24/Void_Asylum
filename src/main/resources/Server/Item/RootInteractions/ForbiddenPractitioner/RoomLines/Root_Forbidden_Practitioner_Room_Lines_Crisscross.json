@@ -1,0 +1,9 @@
+{
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.05
+    },
+    "Forbidden_Practitioner_Room_Lines_Crisscross"
+  ]
+}

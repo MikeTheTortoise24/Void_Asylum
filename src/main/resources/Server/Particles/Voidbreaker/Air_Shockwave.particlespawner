@@ -1,0 +1,138 @@
+{
+  "RenderMode": "Distortion",
+  "MaxConcurrentParticles": 512,
+  "ParticleLifeSpan": {
+    "Min": 3,
+    "Max": 3
+  },
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "SpawnRate": {
+    "Min": 2,
+    "Max": 2
+  },
+  "TotalParticles": {
+    "Min": 1,
+    "Max": 1
+  },
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 0,
+      "Max": 0
+    },
+    "Pitch": {
+      "Min": 0,
+      "Max": 0
+    },
+    "Yaw": {
+      "Min": 180,
+      "Max": -180
+    }
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Ball.png",
+    "FrameSize": {},
+    "ScaleRatioConstraint": "None",
+    "Animation": {
+      "0": {
+        "Scale": {
+          "X": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Y": {
+            "Min": 0,
+            "Max": 0
+          }
+        },
+        "Opacity": 1,
+        "FrameIndex": {},
+        "Color": "#000000"
+      },
+      "20": {
+        "Scale": {
+          "X": {
+            "Min": 2,
+            "Max": 2
+          },
+          "Y": {
+            "Min": 2,
+            "Max": 2
+          }
+        },
+        "Color": "#120055",
+        "Opacity": 1
+      },
+      "80": {
+        "Scale": {
+          "X": {
+            "Min": 7,
+            "Max": 7
+          },
+          "Y": {
+            "Min": 7,
+            "Max": 7
+          }
+        },
+        "Color": "#120055",
+        "Opacity": 1
+      },
+      "100": {
+        "Color": "#0a0131",
+        "Opacity": 0,
+        "FrameIndex": {},
+        "Scale": {
+          "X": {
+            "Min": 10,
+            "Max": 10
+          },
+          "Y": {
+            "Max": 10,
+            "Min": 10
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 1.0,
+          "Max": 1.0
+        },
+        "Y": {
+          "Min": 1,
+          "Max": 1
+        }
+      },
+      "Opacity": 1.0,
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Rotation": {
+        "X": {
+          "Min": 90,
+          "Max": 90
+        }
+      }
+    },
+    "CollisionAnimationFrame": {
+      "FrameIndex": {},
+      "Scale": {
+        "X": {
+          "Min": 0,
+          "Max": 0
+        }
+      }
+    }
+  },
+  "LifeSpan": 25,
+  "UVMotion": {
+    "Strength": 1.2,
+    "Scale": 1,
+    "SpeedY": 0.72,
+    "SpeedX": 0.19
+  },
+  "SpawnBurst": true,
+  "ParticleRotationInfluence": "Billboard"
+}

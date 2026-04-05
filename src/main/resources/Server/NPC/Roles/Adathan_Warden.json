@@ -1,0 +1,39 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Intelligent_No_Knockback_Or_Min_Speed",
+  "Modify": {
+    "Appearance": "Adathan_Warden",
+    "DropList": "Drop_Warden",
+    "ViewSector": 360,
+    "HearingRange": 6,
+    "ViewRange": 25,
+    "AttackDistance": 3,
+    "CombatStrafeWeight": 50,
+    "CombatBackOffDistanceRange": [
+      2,
+      2.5
+    ],
+    "MaxSpeed": 9.0,
+    "MaxHealth": 5000,
+    "Weapons": [
+      "Weapon_Spear_Warden"
+    ],
+    "OffHand": [],
+    "DisableDamageGroups": [
+      "Self",
+      "Boss_Marker"
+    ],
+    "UseCombatActionEvaluator": true,
+    "WakingIdleBehaviorComponent": "Component_Instruction_Stationary_Idle",
+    "_CombatConfig": "CAE_Adathan_Warden",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "Void_Asylum.npcRoles.Warden.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}

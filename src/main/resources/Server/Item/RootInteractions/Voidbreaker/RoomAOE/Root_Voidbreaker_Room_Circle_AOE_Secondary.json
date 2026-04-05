@@ -1,0 +1,57 @@
+{
+  "Interactions": [
+    {
+      "Type": "Parallel",
+      "Interactions": [
+        {
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "RunTime": 1.75
+            },
+            {
+              "Type": "Repeat",
+              "ForkInteractions": {
+                "Interactions": [
+                  {
+                    "Type": "Simple",
+                    "RunTime": 0.75
+                  }
+                ]
+              },
+              "Repeat": 10
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "RunTime": 2.0
+            },
+            {
+              "Type": "Repeat",
+              "ForkInteractions": {
+                "Interactions": [
+                  {
+                    "Type": "FireProjectilesSetIntervals",
+                    "ProjectileConfigName": "Voidbreaker_Arena_Spiral_Base",
+                    "OffsetFromCenter": 10.5,
+                    "Count": 30,
+                    "AngledAwayFromMiddle": true
+                  },
+                  {
+                    "Type": "RotateSelf",
+                    "RunTime": 0.5,
+                    "RotationY": 17
+                  }
+                ]
+              },
+              "Repeat": 45
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

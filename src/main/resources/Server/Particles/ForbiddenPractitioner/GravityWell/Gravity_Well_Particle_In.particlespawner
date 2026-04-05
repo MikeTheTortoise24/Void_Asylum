@@ -1,0 +1,60 @@
+{
+  "EmitOffset": {
+    "X": {
+      "Min": 8,
+      "Max": 8
+    },
+    "Y": {
+      "Min": 8,
+      "Max": 8
+    },
+    "Z": {
+      "Min": 8,
+      "Max": 8
+    }
+  },
+  "UseEmitDirection": true,
+  "InitialVelocity": {
+    "Speed": {
+      "Min": -10,
+      "Max": -10
+    }
+  },
+  "MaxConcurrentParticles": 2000,
+  "ParticleLifeSpan": {
+    "Min": 0.75,
+    "Max": 0.75
+  },
+  "LifeSpan": 6,
+  "ParticleRotationInfluence": "Billboard",
+  "LinearFiltering": true,
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Spark2.png",
+    "Animation": {
+      "0": {
+        "Color": "#bd8ef3"
+      },
+      "90": {
+        "Scale": {
+          "X": {
+            "Min": 0.5,
+            "Max": 0.5
+          }
+        }
+      },
+      "100": {
+        "Scale": {
+          "X": {
+            "Min": 0.1,
+            "Max": 0.1
+          }
+        },
+        "Color": "#19012c"
+      }
+    }
+  },
+  "SpawnRate": {
+    "Min": 500,
+    "Max": 500
+  }
+}

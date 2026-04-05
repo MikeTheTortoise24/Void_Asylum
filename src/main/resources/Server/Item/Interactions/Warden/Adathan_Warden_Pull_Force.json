@@ -1,0 +1,27 @@
+{
+  "Type": "DamageEntity",
+  "Effects": {
+    "CameraEffect": "Impact_Strong"
+  },
+  "DamageEffects": {
+    "Knockback": {
+      "Type": "Directional",
+      "Force": 12,
+      "RelativeZ": 3,
+      "VelocityConfig": {
+        "Style": "Exp",
+        "Threshold": 2,
+        "AirResistance": 0.9,
+        "AirResistanceMax": 0.9,
+        "GroundResistance": 0.9,
+        "GroundResistanceMax": 0.9
+      }
+    },
+    "CameraEffect": "Impact"
+  },
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Environmental": 0
+    }
+  }
+}

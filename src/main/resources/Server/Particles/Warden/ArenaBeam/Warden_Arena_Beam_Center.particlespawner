@@ -1,0 +1,118 @@
+{
+  "RenderMode": "Erosion",
+  "MaxConcurrentParticles": 1000,
+  "ParticleLifeSpan": {
+    "Min": 0.75,
+    "Max": 1.5
+  },
+  "SpawnRate": {
+    "Min": 250,
+    "Max": 400
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Gradient_Triangle.png",
+    "Animation": {
+      "0": {
+        "Opacity": 1,
+        "Scale": {
+          "X": {
+            "Min": 0.1,
+            "Max": 0.1
+          },
+          "Y": {
+            "Min": 0.1,
+            "Max": 0.1
+          }
+        },
+        "Color": "#ff0101"
+      },
+      "30": {
+        "Scale": {
+          "X": {
+            "Min": 0.5,
+            "Max": 0.5
+          },
+          "Y": {
+            "Min": 0.5,
+            "Max": 0.5
+          }
+        },
+        "Color": "#7b0a0a"
+      },
+      "60": {
+        "Scale": {
+          "X": {
+            "Min": 0.7,
+            "Max": 0.7
+          },
+          "Y": {
+            "Min": 0.7,
+            "Max": 0.7
+          }
+        },
+        "Color": "#5b2b2b"
+      },
+      "100": {
+        "Opacity": 0.25,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1,
+            "Max": 1
+          }
+        },
+        "Rotation": {
+          "X": {
+            "Max": 720,
+            "Min": 360
+          },
+          "Y": {
+            "Max": 720,
+            "Min": 360
+          },
+          "Z": {
+            "Max": 720,
+            "Min": 360
+          }
+        },
+        "Color": "#0b0909"
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 1,
+      "Color": "#b41b1b",
+      "Rotation": {
+        "Z": {
+          "Max": 360
+        },
+        "Y": {
+          "Max": 360
+        },
+        "X": {
+          "Max": 360
+        }
+      }
+    },
+    "ScaleRatioConstraint": "OneToOne"
+  },
+  "LifeSpan": 15,
+  "Shape": "Cube",
+  "LinearFiltering": true,
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 20,
+      "Max": -20
+    }
+  },
+  "ParticleRotateWithSpawner": true,
+  "ParticleRotationInfluence": "Billboard",
+  "EmitOffset": {
+    "X": {
+      "Min": 2,
+      "Max": 2
+    }
+  }
+}

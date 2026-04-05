@@ -1,0 +1,11 @@
+{
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Environment": -1,
+      "Environmental": 1
+    }
+  },
+  "DamageCalculatorCooldown": 14,
+  "Debuff": true,
+  "Infinite": true
+}

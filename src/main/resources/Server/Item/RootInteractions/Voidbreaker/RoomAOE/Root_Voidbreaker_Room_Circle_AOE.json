@@ -1,0 +1,130 @@
+{
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "WorldSoundEventId": "SFX_Eye_Void_Attack_Blast"
+      }
+    },
+    {
+      "Type": "Parallel",
+      "Interactions": [
+        {
+          "Interactions": [
+            {
+              "Type": "Repeat",
+              "ForkInteractions": {
+                "Interactions": [
+                  {
+                    "Type": "FireProjectilesSetIntervals",
+                    "ProjectileConfigName": "Voidbreaker_Arena_Spiral_Base",
+                    "AngledAwayFromMiddle": true,
+                    "OffsetFromCenter": 0.1
+                  },
+                  {
+                    "Type": "RotateSelf",
+                    "RotationY": 5,
+                    "RunTime": 0.01
+                  }
+                ]
+              },
+              "Repeat": 60
+            },
+            {
+              "Type": "Repeat",
+              "ForkInteractions": {
+                "Interactions": [
+                  {
+                    "Type": "FireProjectilesSetIntervals",
+                    "ProjectileConfigName": "Voidbreaker_Arena_Spiral_Base",
+                    "AngledAwayFromMiddle": true,
+                    "OffsetFromCenter": 0.1
+                  },
+                  {
+                    "Type": "RotateSelf",
+                    "RotationY": -3,
+                    "RunTime": 0.01
+                  }
+                ]
+              },
+              "Repeat": 60
+            },
+            {
+              "Type": "Repeat",
+              "ForkInteractions": {
+                "Interactions": [
+                  {
+                    "Type": "FireProjectilesSetIntervals",
+                    "ProjectileConfigName": "Voidbreaker_Arena_Spiral_Base",
+                    "AngledAwayFromMiddle": true,
+                    "OffsetFromCenter": 0.1
+                  },
+                  {
+                    "Type": "RotateSelf",
+                    "RotationY": 9,
+                    "RunTime": 0.1
+                  }
+                ]
+              },
+              "Repeat": 60
+            },
+            {
+              "Type": "Repeat",
+              "ForkInteractions": {
+                "Interactions": [
+                  {
+                    "Type": "FireProjectilesSetIntervals",
+                    "ProjectileConfigName": "Voidbreaker_Arena_Spiral_Base",
+                    "AngledAwayFromMiddle": true,
+                    "OffsetFromCenter": 0.1
+                  },
+                  {
+                    "Type": "RotateSelf",
+                    "RotationY": -9,
+                    "RunTime": 0.1
+                  }
+                ]
+              },
+              "Repeat": 60
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "RunTime": 2.0
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "RunTime": 5.0
+            },
+            {
+              "Type": "Repeat",
+              "Repeat": 5,
+              "ForkInteractions": {
+                "Interactions": [
+                  {
+                    "Type": "ExecuteInteractionAtPlayer",
+                    "EntityNameToSpawn": "Boss_Marker_Platform",
+                    "Players": 1,
+                    "Range": 30,
+                    "RootInteractionName": "Root_Adathan_Void_Dragon_Targeted_Beam"
+                  },
+                  {
+                    "Type": "Simple",
+                    "RunTime": 3.25
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

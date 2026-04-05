@@ -1,0 +1,90 @@
+{
+  "Type": "Ability",
+  "Description": "A circle around the room that players must stand in, or take damage.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 45
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 4000,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 1.25,
+  "AttackDistanceRange": [
+    0,
+    15
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    2,
+    2.8
+  ],
+  "SubState": "Default",
+  "Ability": {
+    "Interactions": [
+      {
+        "Type": "Repeat",
+        "Repeat": 2,
+        "ForkInteractions": {
+          "Interactions": [
+            {
+              "Type": "ExecuteInteractionAroundPointRandomly",
+              "EntityNameToSpawn": "Boss_Marker_Platform_Secondary",
+              "AnchorX": 149.5,
+              "AnchorY": 95,
+              "AnchorZ": -242.5,
+              "RootInteractionName": "Root_Adathan_Warden_Stack_Circle",
+              "Radius": 15,
+              "Effects": {
+                "WorldSoundEventId": "SFX_Warden_Stack_Circle"
+              }
+            },
+            {
+              "Type": "Simple",
+              "RunTime": 4.7,
+              "Effects": {
+                "MovementEffects": {
+                  "DisableAll": true
+                },
+                "ItemPlayerAnimationsId": "Staff",
+                "ItemAnimationId": "CastSummonCharging"
+              }
+            },
+            {
+              "Type": "Simple",
+              "Effects": {
+                "ItemAnimationId": "CastSummonCharged",
+                "ItemPlayerAnimationsId": "Staff",
+                "MovementEffects": {
+                  "DisableAll": true
+                }
+              },
+              "RunTime": 0.75
+            }
+          ]
+        }
+      },
+      {
+        "Type": "Simple",
+        "RunTime": 1.5,
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          }
+        }
+      }
+    ]
+  }
+}

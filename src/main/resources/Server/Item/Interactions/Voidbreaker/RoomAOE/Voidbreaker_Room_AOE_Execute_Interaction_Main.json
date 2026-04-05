@@ -1,0 +1,53 @@
+{
+  "Type": "Parallel",
+  "Interactions": [
+    {
+      "Interactions": [
+        {
+          "Type": "ExecuteInteraction",
+          "EntityName": "Boss_Marker_Platform",
+          "RootInteractionName": "Root_Voidbreaker_Room_Circle_AOE",
+          "Range": 50
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Type": "ExecuteInteraction",
+          "EntityName": "Boss_Marker_Platform_Secondary",
+          "RootInteractionName": "Root_Voidbreaker_Room_Circle_AOE_Secondary",
+          "Range": 50
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 3.7
+        },
+        {
+          "Type": "Repeat",
+          "Repeat": 7,
+          "ForkInteractions": {
+            "Interactions": [
+              {
+                "Type": "ExecuteInteraction",
+                "Range": 30,
+                "EntityName": "Boss_Marker",
+                "RootInteractionName": "Root_Voidbreaker_Shoot_At_Player",
+                "Count": 1,
+                "Random": true
+              },
+              {
+                "Type": "Simple",
+                "RunTime": 2.6
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

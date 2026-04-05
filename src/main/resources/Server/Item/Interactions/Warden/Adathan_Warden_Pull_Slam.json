@@ -1,0 +1,79 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "ExecuteInteractionAtSelf",
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      },
+      "EntityNameToSpawn": "Boss_Marker",
+      "RootInteractionName": "Root_Adathan_Pull_Slam_ExecuteInteraction"
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.7,
+      "Effects": {
+        "WorldSoundEventId": "SFX_Divine_Respawn",
+        "ItemPlayerAnimationsId": "Mace",
+        "ItemAnimationId": "SwingDownCharging",
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "Particles": [
+          {
+            "SystemId": "Warden_Dome",
+            "TargetEntityPart": "Entity",
+            "DetachedFromModel": true
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 1,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "ItemPlayerAnimationsId": "Mace",
+        "ItemAnimationId": "SwingDownCharged",
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      },
+      "RunTime": 0.1
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "AOECircle",
+        "Range": 6
+      },
+      "RunTime": 0.1,
+      "HitEntity": {
+        "Interactions": [
+          "Adathan_Warden_Pull_Explosion_Damage"
+        ]
+      },
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Explosion_Big",
+            "Scale": 2,
+            "TargetEntityPart": "Entity"
+          }
+        ],
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    }
+  ]
+}

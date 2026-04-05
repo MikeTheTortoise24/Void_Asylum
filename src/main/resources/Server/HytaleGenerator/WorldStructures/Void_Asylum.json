@@ -1,0 +1,44 @@
+{
+  "Type": "NoiseRange",
+  "Biomes": [
+    {
+      "Biome": "Void_Asylum",
+      "Min": 0,
+      "Max": 2
+    }
+  ],
+  "DefaultBiome": "Void",
+  "DefaultTransitionDistance": 16,
+  "MaxBiomeEdgeDistance": 16,
+  "Density": {
+    "Type": "Imported",
+    "Name": "Biome-Map-Portals"
+  },
+  "ContentFields": [
+    {
+      "Type": "BaseHeight",
+      "Name": "Base",
+      "Y": 100
+    },
+    {
+      "Type": "BaseHeight",
+      "Name": "Water",
+      "Y": 100
+    },
+    {
+      "Type": "BaseHeight",
+      "Name": "Bedrock",
+      "Y": 0
+    }
+  ],
+  "SpawnPositions": {
+    "Type": "List",
+    "Positions": [
+      {
+        "X": 0,
+        "Y": 105,
+        "Z": -22
+      }
+    ]
+  }
+}

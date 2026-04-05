@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Warden_Phase2_Start",
+      "PositionOffset": {
+        "Y": 0.25
+      }
+    }
+  ]
+}

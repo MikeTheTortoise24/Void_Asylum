@@ -1,0 +1,19 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Voidbreaker_Spin"
+    },
+    {
+      "SpawnerId": "Voidbreaker_Spin"
+    },
+    {
+      "SpawnerId": "Voidbreaker_Spin_Soft"
+    },
+    {
+      "SpawnerId": "Voidbreaker_Spin_Sparks",
+      "FixedRotation": false
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": false
+}

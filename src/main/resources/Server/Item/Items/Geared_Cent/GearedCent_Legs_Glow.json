@@ -1,0 +1,63 @@
+{
+  "TranslationProperties": {
+    "Name": "Energized Centurion Greaves"
+  },
+  "Parent": "Armor_Iron_Legs",
+  "ItemLevel": 22,
+  "Icon": "Icons/ItemsGenerated/GearedCent_Legs_Glow.png",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      5,
+      -23
+    ]
+  },
+  "Model": "Items/Armor/GearedCent/DwarvenArmor_Legs.blockymodel",
+  "Texture": "Items/Armor/GearedCent/GearedCent_Legs_Texture_Glow.png",
+  "Armor": {
+    "ArmorSlot": "Legs",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Pants",
+      "Shoes"
+    ],
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 17,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.07,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.07,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    }
+  },
+  "MaxDurability": 250,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Bronze"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "Quality": "Developer"
+}

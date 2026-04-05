@@ -1,0 +1,76 @@
+{
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.05
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Gravity_Well_Orb",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": -1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Repeat",
+      "Repeat": 50,
+      "ForkInteractions": {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "Selector": {
+              "Id": "AOECircle",
+              "Range": 8
+            },
+            "HitEntity": {
+              "Interactions": [
+                "Adathan_Forbidden_Practitioner_Gravity_Well_Pull_Damage"
+              ]
+            },
+            "IgnoreOwner": true
+          },
+          {
+            "Type": "Simple",
+            "RunTime": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "AOECircle",
+        "Range": 5.5
+      },
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Gravity_Well_Explode",
+            "TargetEntityPart": "Entity"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Forbidden_Practitioner_Gravity_Well_Explode"
+      },
+      "RunTime": 0.1,
+      "HitEntity": {
+        "Interactions": [
+          "Adathan_Forbidden_Practitioner_Gravity_Well_Explode_Damage"
+        ]
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 1.5
+    },
+    {
+      "Type": "RemoveEntity"
+    }
+  ]
+}

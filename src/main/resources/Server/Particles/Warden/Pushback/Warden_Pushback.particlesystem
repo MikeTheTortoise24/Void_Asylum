@@ -1,0 +1,17 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Warden_Pushback_Start",
+      "PositionOffset": {
+        "Y": 4
+      }
+    },
+    {
+      "SpawnerId": "Warden_Pushback_Main",
+      "PositionOffset": {
+        "Y": 4.0
+      }
+    }
+  ],
+  "IsImportant": false
+}

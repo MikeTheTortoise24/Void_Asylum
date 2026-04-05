@@ -1,0 +1,127 @@
+{
+  "Type": "Parallel",
+  "Interactions": [
+    {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "MovementEffects": {
+              "DisableAll": true
+            },
+            "Particles": [
+              {
+                "SystemId": "Adathan_Dragons_Breath",
+                "TargetEntityPart": "Entity",
+                "DetachedFromModel": false,
+                "RotationOffset": {
+                  "Pitch": -90
+                },
+                "PositionOffset": {
+                  "Z": 1.5,
+                  "Y": 0.5
+                },
+                "TargetNodeName": "Head"
+              }
+            ],
+            "WorldSoundEventId": "Adathan_Void_Dragon_Breath"
+          },
+          "RunTime": 3.0
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "RunTime": 1.0,
+              "Selector": {
+                "Id": "Horizontal",
+                "Length": 50,
+                "YawStartOffset": -25,
+                "Direction": "ToLeft",
+                "StartDistance": 10,
+                "EndDistance": 25,
+                "ExtendTop": 3
+              },
+              "Effects": {
+                "MovementEffects": {
+                  "DisableAll": true
+                }
+              },
+              "HitEntity": {
+                "Interactions": [
+                  {
+                    "Type": "ApplyEffect",
+                    "EffectId": "Adathan_Void_Dragon_Breath_Fire",
+                    "Entity": "Target"
+                  },
+                  "Adathan_Void_Dragon_Breath_Damage"
+                ]
+              }
+            },
+            {
+              "Type": "Selector",
+              "RunTime": 1.0,
+              "Selector": {
+                "Id": "Horizontal",
+                "Length": 50,
+                "YawStartOffset": -25,
+                "Direction": "ToLeft",
+                "StartDistance": 10,
+                "EndDistance": 25,
+                "ExtendTop": 3
+              },
+              "Effects": {
+                "MovementEffects": {
+                  "DisableAll": true
+                }
+              },
+              "HitEntity": {
+                "Interactions": [
+                  {
+                    "Type": "ApplyEffect",
+                    "EffectId": "Adathan_Void_Dragon_Breath_Fire",
+                    "Entity": "Target"
+                  },
+                  "Adathan_Void_Dragon_Breath_Damage"
+                ]
+              }
+            },
+            {
+              "Type": "Selector",
+              "RunTime": 1.0,
+              "Selector": {
+                "Id": "Horizontal",
+                "Length": 50,
+                "YawStartOffset": -25,
+                "Direction": "ToLeft",
+                "StartDistance": 10,
+                "EndDistance": 25,
+                "ExtendTop": 3
+              },
+              "Effects": {
+                "MovementEffects": {
+                  "DisableAll": true
+                }
+              },
+              "HitEntity": {
+                "Interactions": [
+                  {
+                    "Type": "ApplyEffect",
+                    "EffectId": "Adathan_Void_Dragon_Breath_Fire",
+                    "Entity": "Target"
+                  },
+                  "Adathan_Void_Dragon_Breath_Damage"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

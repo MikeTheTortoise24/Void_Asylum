@@ -1,0 +1,62 @@
+{
+  "RenderMode": "Erosion",
+  "MaxConcurrentParticles": 4,
+  "ParticleLifeSpan": {
+    "Min": 7.5,
+    "Max": 7.5
+  },
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "Particle": {
+    "Texture": "Particles/Textures/Circles/Signature_Spin_GS2.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "Animation": {
+      "0": {
+        "Opacity": 0,
+        "Color": "#3f0565"
+      },
+      "33": {
+        "Opacity": 0.7
+      },
+      "66": {
+        "Opacity": 0.86
+      },
+      "80": {
+        "Opacity": 0.284
+      },
+      "100": {
+        "Opacity": 0,
+        "Rotation": {
+          "Y": {
+            "Min": -180,
+            "Max": 180
+          }
+        },
+        "Color": "#4b155d"
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 1.0,
+      "Rotation": {
+        "X": {
+          "Min": 90,
+          "Max": 90
+        }
+      },
+      "Scale": {
+        "X": {
+          "Min": 0.8,
+          "Max": 2.2
+        }
+      }
+    },
+    "UseSpriteBlending": true,
+    "SoftParticlesFadeFactor": 2,
+    "UVOption": "RandomFlipUV"
+  },
+  "LifeSpan": 7.5,
+  "SpawnBurst": true,
+  "ParticleRotationInfluence": "None",
+  "IsLowRes": true,
+  "LinearFiltering": true
+}

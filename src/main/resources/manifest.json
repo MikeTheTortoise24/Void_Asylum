@@ -1,18 +1,24 @@
 {
-  "Group": "${plugin_group}",
-  "Name": "${plugin_name}",
-  "Version": "${plugin_version}",
-  "Description": "${plugin_description}",
+  "Group": "Adathan",
+  "Name": "Adathans_Void_Asylum",
+  "Version": "1.0.0",
+  "Description": "",
   "Authors": [
     {
-      "Name": "${plugin_author}"
+      "Name": "Adathan",
+      "Email": "",
+      "Url": ""
     }
   ],
-  "Website": "${plugin_website}",
-  "ServerVersion": "${server_version}",
-  "Dependencies": {},
+  "Website": "",
+  "ServerVersion": "2026.03.26-89796e57b",
+  "Dependencies": {
+    "Adathan:AdathansBossLibrary": ""
+  },
   "OptionalDependencies": {},
+  "LoadBefore": {},
   "DisabledByDefault": false,
   "IncludesAssetPack": true,
-  "Main": "${plugin_main_entrypoint}"
+  "SubPlugins": [],
+  "Main": "com.Adathan.VoidAsylum"
 }

@@ -1,0 +1,12 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Warden_Throwing_Spear_Circle",
+      "PositionOffset": {
+        "Y": -1
+      }
+    }
+  ],
+  "BoundingRadius": 100,
+  "IsImportant": true
+}

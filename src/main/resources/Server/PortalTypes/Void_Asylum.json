@@ -1,0 +1,32 @@
+{
+  "InstanceId": "Void_Asylum",
+  "Description": {
+    "DisplayName": "Void_Asylum.portals.name",
+    "FlavorText": "Void_Asylum.portals.description",
+    "ThemeColor": "#1a0275",
+    "SplashImage": "DefaultArtwork.png",
+    "Tips": [
+      "Void_Asylum.portals.tip1",
+      "Void_Asylum.portals.tip2",
+      "Void_Asylum.portals.tip3",
+      "Void_Asylum.portals.tip4",
+      "Void_Asylum.portals.tip5",
+      "Void_Asylum.portals.tip6"
+    ]
+  },
+  "GameplayConfig": "Config_Void_Asylum",
+  "Spawn": {
+    "SpawnProviderOverride": {
+      "Id": "Global",
+      "SpawnPoint": {
+        "Y": 101,
+        "X": 0,
+        "Z": 0,
+        "Pitch": 0,
+        "Yaw": 0,
+        "Roll": 0
+      }
+    },
+    "SpawnReturnPortal": true
+  }
+}

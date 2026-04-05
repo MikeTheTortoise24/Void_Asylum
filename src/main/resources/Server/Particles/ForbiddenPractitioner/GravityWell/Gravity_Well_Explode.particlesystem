@@ -1,0 +1,16 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Gravity_Well_Particle_Out",
+      "PositionOffset": {
+        "Y": 1
+      }
+    },
+    {
+      "SpawnerId": "Gravity_Well_Center_Ball_Explode",
+      "PositionOffset": {
+        "Y": 1
+      }
+    }
+  ]
+}

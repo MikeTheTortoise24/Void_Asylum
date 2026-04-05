@@ -1,0 +1,78 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Default",
+    "ItemAnimationId": "SwingRight",
+    "WorldSoundEventId": "SFX_Mace_T1_Swing_Charged",
+    "LocalSoundEventId": "SFX_Player_Unarmed_Swing_Left"
+  },
+  "RunTime": 0.4,
+  "Next": {
+    "Type": "Parallel",
+    "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "$Comment": "Length of Combat",
+            "RunTime": 0.1,
+            "Selector": {
+              "Id": "Horizontal",
+              "Direction": "ToLeft",
+              "TestLineOfSight": true,
+              "ExtendTop": 0.5,
+              "ExtendBottom": 2,
+              "StartDistance": 10,
+              "EndDistance": 15,
+              "Length": 45,
+              "YawStartOffset": -25
+            },
+            "HitEntity": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "DefaultOk": true,
+                  "DefaultValue": {
+                    "Interactions": [
+                      "Adathan_Void_Dragon_Basic_Attack_Damage"
+                    ]
+                  },
+                  "Var": "Basic_Attack_Damage"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "$Comment": "Length of Effect",
+            "RunTime": 0.5,
+            "Effects": {
+              "Trails": [
+                {
+                  "TrailId": "Bear_Claw",
+                  "TargetNodeName": "R-Hand",
+                  "TargetEntityPart": "Entity",
+                  "RotationOffset": {
+                    "Yaw": 0,
+                    "Pitch": 0,
+                    "Roll": 90
+                  },
+                  "PositionOffset": {
+                    "X": 0,
+                    "Y": -0.1,
+                    "Z": 0.25
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

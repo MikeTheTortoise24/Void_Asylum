@@ -1,0 +1,61 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.05,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.1,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "Particles": [
+          {
+            "SystemId": "Warden_Random_Arena_AOE",
+            "TargetEntityPart": "Entity"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Adathan_Warden_Random_Arena_AOE_Spawn"
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 1.6,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "AOECircle",
+        "Range": 1.5
+      },
+      "RunTime": 0.1,
+      "HitEntity": {
+        "Interactions": [
+          "Adathan_Warden_Stack_Circle_Damage"
+        ]
+      },
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Lightning",
+            "TargetEntityPart": "Entity"
+          }
+        ],
+        "WorldSoundEventId": "SFX_Goblin_Lobber_Bomb_Death"
+      }
+    }
+  ]
+}

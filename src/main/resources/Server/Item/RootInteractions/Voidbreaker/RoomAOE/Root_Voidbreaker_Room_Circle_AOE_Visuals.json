@@ -1,0 +1,16 @@
+{
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Outer_Circle",
+            "TargetEntityPart": "Entity"
+          }
+        ]
+      },
+      "RunTime": 1.0
+    }
+  ]
+}

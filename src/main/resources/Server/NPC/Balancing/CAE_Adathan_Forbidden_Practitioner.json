@@ -1,0 +1,99 @@
+{
+  "Type": "CombatActionEvaluator",
+  "TargetMemoryDuration": 30,
+  "CombatActionEvaluator": {
+    "RunConditions": [
+      {
+        "Type": "TimeSinceLastUsed",
+        "Curve": {
+          "ResponseCurve": "Linear",
+          "XRange": [
+            0,
+            7
+          ]
+        }
+      },
+      {
+        "Type": "Randomiser",
+        "MinValue": 0.9,
+        "MaxValue": 1
+      }
+    ],
+    "AvailableActions": {
+      "Default": {
+        "Type": "State",
+        "Description": "Change to the Default state",
+        "State": "Combat",
+        "SubState": "Default",
+        "PostExecuteDistanceRange": [
+          6,
+          10
+        ],
+        "Target": "Hostile",
+        "WeightCoefficient": 1.25,
+        "Conditions": [
+          {
+            "Type": "TargetDistance",
+            "Curve": {
+              "ResponseCurve": "SimpleDescendingLogistic",
+              "XRange": [
+                0,
+                10
+              ]
+            }
+          },
+          {
+            "Type": "Randomiser",
+            "MinValue": 0.9,
+            "MaxValue": 1
+          },
+          {
+            "Type": "TimeSinceLastUsed",
+            "Curve": {
+              "Type": "Switch",
+              "SwitchPoint": 10
+            }
+          }
+        ]
+      },
+      "AOELob": "CAO_ForbiddenPractitioner_AOE_Lob",
+      "GravityWell": "CAO_ForbiddenPractitioner_Gravity_Well",
+      "SkyFall": "CAO_Forbidden_Practitioner_Sky_Fall",
+      "StaffSlam": "CAO_Forbidden_Practitioner_Staff_Slam",
+      "RoomLines": "CAO_Forbidden_Practitioner_Room_Lines"
+    },
+    "ActionSets": {
+      "Default": {
+        "BasicAttacks": {
+          "Attacks": [
+            "Root_Forbidden_Practitioner_Basic_Attacks"
+          ],
+          "UseProjectedDistance": true,
+          "MaxRange": 10,
+          "Timeout": 0.001,
+          "CooldownRange": [
+            0.5,
+            1
+          ],
+          "InteractionVars": {
+            "Melee_Damage": {
+              "Interactions": [
+                "Adathan_Warden_Melee_Damage"
+              ]
+            }
+          }
+        },
+        "Actions": [
+          "AOELob",
+          "GravityWell",
+          "SkyFall",
+          "StaffSlam",
+          "RoomLines"
+        ]
+      }
+    },
+    "MinActionUtility": 0.75,
+    "MinRunUtility": 0.5
+  },
+  "EntityEffect": "Stop_Passive_Regen"
+}

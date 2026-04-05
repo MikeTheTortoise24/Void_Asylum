@@ -1,0 +1,46 @@
+{
+  "Texture": "NPC/Void/Eye_Void/Models/Texture.png",
+  "Particles": [
+    {
+      "Color": "#5736c3",
+      "SystemId": "VoidImpact",
+      "TargetNodeName": "Fireball",
+      "Scale": 10
+    },
+    {
+      "Color": "#5f0dba",
+      "Scale": 5,
+      "SystemId": "Spectre_Void_Head"
+    }
+  ],
+  "Trails": [
+    {
+      "TrailId": "Void",
+      "TargetNodeName": "Origin_Item"
+    },
+    {
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 90
+      },
+      "TrailId": "Wind",
+      "TargetNodeName": "Origin_Item"
+    }
+  ],
+  "Model": "NPC/Void/Eye_Void/Models/Model.blockymodel",
+  "MinScale": 1,
+  "MaxScale": 1,
+  "HitBox": {
+    "Min": {
+      "X": -1,
+      "Y": -1,
+      "Z": -1
+    },
+    "Max": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    }
+  }
+}

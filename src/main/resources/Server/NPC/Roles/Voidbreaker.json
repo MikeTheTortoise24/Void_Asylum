@@ -1,0 +1,37 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Intelligent",
+  "Modify": {
+    "Appearance": "Voidbreaker",
+    "DropList": "Drop_Voidbreaker",
+    "ViewSector": 360,
+    "HearingRange": 6,
+    "ViewRange": 25,
+    "AttackDistance": 2.5,
+    "CombatStrafeWeight": 50,
+    "CombatBackOffDistanceRange": [
+      2,
+      2.5
+    ],
+    "MaxSpeed": 6.5,
+    "MaxHealth": 3000,
+    "Weapons": [],
+    "OffHand": [],
+    "DisableDamageGroups": [
+      "Self",
+      "Boss_Marker"
+    ],
+    "UseCombatActionEvaluator": true,
+    "WakingIdleBehaviorComponent": "Component_Instruction_Stationary_Idle",
+    "_CombatConfig": "CAE_Voidbreaker",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "Void_Asylum.npcRoles.Voidbreaker.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}

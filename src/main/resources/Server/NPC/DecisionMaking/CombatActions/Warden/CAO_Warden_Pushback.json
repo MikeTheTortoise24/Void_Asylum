@@ -1,0 +1,116 @@
+{
+  "Type": "Ability",
+  "Description": "Push the player towards the edge of the platform.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 60
+      }
+    },
+    {
+      "Type": "TargetDistance",
+      "Curve": {
+        "Type": "Default",
+        "ResponseCurve": "ReverseLinear",
+        "XRange": [
+          2,
+          10
+        ]
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 4900,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 1.25,
+  "AttackDistanceRange": [
+    0,
+    10
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    2,
+    2.8
+  ],
+  "SubState": "Default",
+  "Ability": {
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "RunTime": 2.0,
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "Particles": [
+            {
+              "SystemId": "Warden_Pushback",
+              "TargetEntityPart": "Entity",
+              "DetachedFromModel": true
+            }
+          ],
+          "ItemPlayerAnimationsId": "Staff",
+          "ItemAnimationId": "CastSummonCharging",
+          "WorldSoundEventId": "SFX_Warden_Pushback_Start"
+        }
+      },
+      {
+        "Type": "Repeat",
+        "Repeat": 25,
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          }
+        },
+        "ForkInteractions": {
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "Effects": {
+                "MovementEffects": {
+                  "DisableAll": true
+                },
+                "WorldSoundEventId": "SFX_Arrow_Whistle"
+              },
+              "IgnoreOwner": true,
+              "HitEntity": {
+                "Interactions": [
+                  "Adathan_Warden_Pushback_Damage"
+                ]
+              },
+              "Selector": {
+                "Id": "AOECircle",
+                "Range": 25
+              }
+            },
+            {
+              "Type": "Simple",
+              "RunTime": 0.2
+            }
+          ]
+        }
+      },
+      {
+        "Type": "Simple",
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "ItemAnimationId": "CastSummonCharged",
+          "ItemPlayerAnimationsId": "Staff"
+        },
+        "RunTime": 0.1
+      }
+    ]
+  }
+}

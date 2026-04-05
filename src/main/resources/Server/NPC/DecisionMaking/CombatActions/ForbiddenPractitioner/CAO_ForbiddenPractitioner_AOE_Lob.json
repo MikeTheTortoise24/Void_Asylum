@@ -1,0 +1,40 @@
+{
+  "Type": "Ability",
+  "Description": "Lob AOE Around the boss.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Default",
+        "ResponseCurve": "Linear",
+        "XRange": [
+          0,
+          25
+        ]
+      }
+    },
+    {
+      "Type": "TargetDistance",
+      "Curve": {
+        "XRange": [
+          2,
+          20
+        ],
+        "ResponseCurve": "ReverseLinear"
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 1.0,
+  "AttackDistanceRange": [
+    0,
+    15
+  ],
+  "AbilityType": "Primary",
+  "Ability": "Root_Forbidden_Practitioner_AOE_Lob",
+  "PostExecuteDistanceRange": [
+    8,
+    10
+  ],
+  "SubState": "Default"
+}

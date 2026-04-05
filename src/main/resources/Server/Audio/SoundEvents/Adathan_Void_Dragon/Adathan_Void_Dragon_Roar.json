@@ -1,0 +1,19 @@
+{
+  "PreventSoundInterruption": true,
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Adathan_Void_Dragon/SFX_Void_Dragon_Roar_Adathan.ogg"
+      ],
+      "Volume": 10,
+      "RandomSettings": {
+        "MinVolume": -2,
+        "MinPitch": -3.216,
+        "MaxPitch": 0
+      }
+    }
+  ],
+  "Volume": 0,
+  "Parent": "SFX_Attn_Loud",
+  "MaxDistance": 100
+}

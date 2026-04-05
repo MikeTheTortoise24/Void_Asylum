@@ -1,0 +1,62 @@
+{
+  "Tags": {
+    "Attack": [
+      "Ranged"
+    ]
+  },
+  "Interactions": [
+    {
+      "Type": "Chaining",
+      "ChainingAllowance": 100,
+      "ChainId": "RoomLines",
+      "Next": [
+        {
+          "Type": "RunRootInteraction",
+          "RootInteraction": "Root_Forbidden_Practitioner_Room_Lines_Out_In"
+        },
+        {
+          "Type": "RunRootInteraction",
+          "RootInteraction": "Root_Forbidden_Practitioner_Room_Lines_Inside_Out"
+        },
+        {
+          "Type": "RunRootInteraction",
+          "RootInteraction": "Root_Forbidden_Practitioner_Room_Lines_Crisscross"
+        },
+        {
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "RotateSelf",
+              "RotationY": 45
+            },
+            {
+              "Type": "Simple",
+              "RunTime": 0.1
+            },
+            {
+              "Type": "RunRootInteraction",
+              "RootInteraction": "Root_Forbidden_Practitioner_Room_Lines_Out_In"
+            }
+          ]
+        },
+        {
+          "Type": "RunRootInteraction",
+          "RootInteraction": "Root_Forbidden_Practitioner_Room_Lines_Inside_Out"
+        },
+        {
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "RunRootInteraction",
+              "RootInteraction": "Root_Forbidden_Practitioner_Room_Lines_Crisscross"
+            },
+            {
+              "Type": "RotateSelf",
+              "RotationY": 45
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

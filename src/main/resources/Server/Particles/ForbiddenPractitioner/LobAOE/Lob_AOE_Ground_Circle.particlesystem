@@ -1,0 +1,15 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Lob_AOE_Ground_Circle_Ring"
+    },
+    {
+      "SpawnerId": "Lob_AOE_Ground_Circle_Pulse"
+    },
+    {
+      "SpawnerId": "Lob_AOE_Particle_Circle"
+    }
+  ],
+  "BoundingRadius": 1000,
+  "IsImportant": true
+}

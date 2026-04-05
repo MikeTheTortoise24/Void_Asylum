@@ -1,0 +1,73 @@
+{
+  "Type": "Ability",
+  "Description": "Spawn X spears randomly around the arena that knock the player off if they get hit.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "XRange": [
+          0,
+          35
+        ],
+        "ResponseCurve": "Linear"
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Curve": {
+        "Type": "Switch",
+        "InitialState": 1,
+        "FinalState": 0,
+        "SwitchPoint": 4500
+      },
+      "Stat": "Health"
+    }
+  ],
+  "Target": "Hostile",
+  "AttackDistanceRange": [
+    0,
+    20
+  ],
+  "Ability": {
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "RunTime": 2.0,
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "WorldSoundEventId": "Adathan_Void_Dragon_Roar"
+        },
+        "ViewDistance": 200
+      },
+      {
+        "Type": "Repeat",
+        "Repeat": 2,
+        "ForkInteractions": {
+          "Interactions": [
+            {
+              "Type": "ExecuteInteraction",
+              "RootInteractionName": "Root_Adathan_Void_Dragon_Spear",
+              "EntityName": "Boss_Marker_Spear",
+              "Random": true,
+              "Count": 2,
+              "Range": 100,
+              "ViewDistance": 200
+            },
+            {
+              "Type": "Simple",
+              "RunTime": 1.0
+            }
+          ]
+        },
+        "ViewDistance": 200
+      }
+    ]
+  },
+  "PostExecuteDistanceRange": [
+    7,
+    8
+  ],
+  "AbilityType": "Primary"
+}

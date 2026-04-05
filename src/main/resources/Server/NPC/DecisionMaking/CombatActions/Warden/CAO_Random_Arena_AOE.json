@@ -1,0 +1,115 @@
+{
+  "Type": "Ability",
+  "Description": "Spawns AOE around the room randomly.",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 35
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 2450,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 2,
+  "AttackDistanceRange": [
+    0,
+    15
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    2,
+    2.8
+  ],
+  "SubState": "Default",
+  "Ability": {
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "RunTime": 1.0,
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "ItemPlayerAnimationsId": "Bear_Grizzly_Default",
+          "ItemAnimationId": "Stomp",
+          "WorldSoundEventId": "SFX_Staff_Flame_Trap_Despawn"
+        }
+      },
+      {
+        "Type": "Parallel",
+        "Interactions": [
+          {
+            "Interactions": [
+              {
+                "Type": "Simple",
+                "RunTime": 1.5,
+                "Effects": {
+                  "MovementEffects": {
+                    "DisableAll": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "Interactions": [
+              {
+                "Type": "Repeat",
+                "Repeat": 50,
+                "ForkInteractions": {
+                  "Interactions": [
+                    {
+                      "Type": "ExecuteInteractionAroundPointRandomly",
+                      "EntityNameToSpawn": "Boss_Marker_Platform_Secondary",
+                      "AnchorX": 149.5,
+                      "AnchorY": 95,
+                      "AnchorZ": -242.5,
+                      "RootInteractionName": "Root_Adathan_Warden_Random_Arena_AOE",
+                      "Radius": 13
+                    },
+                    {
+                      "Type": "Simple",
+                      "RunTime": 0.2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "Effects": {
+          "Particles": [
+            {
+              "SystemId": "Warden_Random_AOE_Start",
+              "TargetEntityPart": "Entity",
+              "TargetNodeName": "Hip",
+              "Scale": 5,
+              "RotationOffset": {
+                "Roll": -90
+              }
+            },
+            {
+              "SystemId": "Lightning",
+              "TargetEntityPart": "Entity",
+              "Scale": 2,
+              "PositionOffset": {
+                "Y": -0.5
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

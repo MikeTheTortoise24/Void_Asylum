@@ -1,0 +1,99 @@
+{
+  "Type": "Ability",
+  "Description": "Triangles of damage :) ",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 30
+      }
+    },
+    {
+      "Type": "TargetDistance",
+      "Curve": {
+        "Type": "Default",
+        "ResponseCurve": "ReverseLinear",
+        "XRange": [
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 2500,
+        "InitialState": 0,
+        "FinalState": 1
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "WeightCoefficient": 1.25,
+  "AttackDistanceRange": [
+    0,
+    15
+  ],
+  "AbilityType": "Primary",
+  "PostExecuteDistanceRange": [
+    2,
+    2.8
+  ],
+  "SubState": "Default",
+  "Ability": {
+    "Interactions": [
+      {
+        "Type": "ExecuteInteractionAtSelf",
+        "EntityNameToSpawn": "Boss_Marker",
+        "RootInteractionName": "Root_Adathan_Warden_Quad_Triangle"
+      },
+      {
+        "Type": "Simple",
+        "RunTime": 2.5,
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "ItemPlayerAnimationsId": "Staff",
+          "ItemAnimationId": "CastSummonCharging"
+        }
+      },
+      {
+        "Type": "Simple",
+        "Effects": {
+          "ItemAnimationId": "CastSummonCharged",
+          "ItemPlayerAnimationsId": "Staff",
+          "MovementEffects": {
+            "DisableAll": true
+          }
+        },
+        "RunTime": 0.75
+      },
+      {
+        "Type": "Simple",
+        "RunTime": 2.1,
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "ItemPlayerAnimationsId": "Staff",
+          "ItemAnimationId": "CastSummonCharging"
+        }
+      },
+      {
+        "Type": "Simple",
+        "Effects": {
+          "ItemAnimationId": "CastSummonCharged",
+          "ItemPlayerAnimationsId": "Staff",
+          "MovementEffects": {
+            "DisableAll": true
+          }
+        },
+        "RunTime": 0.75
+      }
+    ]
+  }
+}

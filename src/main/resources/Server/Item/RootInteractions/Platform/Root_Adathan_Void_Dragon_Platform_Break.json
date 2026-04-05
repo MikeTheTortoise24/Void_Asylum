@@ -1,0 +1,66 @@
+{
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Platform_Cracks",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 0.7
+            }
+          }
+        ],
+        "WorldSoundEventId": "Platform_Rumble"
+      },
+      "RunTime": 2.5
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.1,
+      "Effects": {
+        "WorldSoundEventId": "SFX_Golem_Earth_Stomp_Impact",
+        "Particles": [
+          {
+            "SystemId": "Explosion_Big",
+            "TargetEntityPart": "Entity",
+            "Scale": 5
+          }
+        ]
+      }
+    },
+    "Adathan_Void_Dragon_Platform_Break",
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "AOECircle",
+        "Range": 9
+      },
+      "IgnoreOwner": true,
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "ApplyEffect",
+            "Entity": "Target",
+            "EffectId": "Adathan_Void_DragonFall_Immunity"
+          },
+          "Adathan_Void_Dragon_Platform_Explosion_Damage"
+        ]
+      },
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Platform_Reform",
+            "TargetEntityPart": "Entity"
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 15
+    },
+    "Adathan_Void_Dragon_Platform_Build"
+  ]
+}

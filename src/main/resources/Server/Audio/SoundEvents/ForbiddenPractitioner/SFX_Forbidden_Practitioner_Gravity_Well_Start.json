@@ -1,0 +1,21 @@
+{
+  "Volume": 5.0,
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Adathan_ForbiddenPractitioner/SFX_Gravity_Well_Cast.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -3.8631371386483475,
+        "MinVolume": -0.9151498112135024,
+        "MaxPitch": 1.6500422849992202
+      },
+      "Volume": 0,
+      "Probability": 100
+    }
+  ],
+  "PreventSoundInterruption": true,
+  "Parent": "SFX_Attn_Moderate",
+  "Pitch": 0,
+  "MaxDistance": 50
+}

@@ -1,0 +1,133 @@
+{
+  "RenderMode": "BlendLinear",
+  "ParticleRotationInfluence": "Billboard",
+  "LinearFiltering": true,
+  "LightInfluence": 0,
+  "MaxConcurrentParticles": 1000,
+  "ParticleLifeSpan": {
+    "Min": 0.75,
+    "Max": 1.5
+  },
+  "ParticleRotateWithSpawner": false,
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "SpawnRate": {
+    "Min": 10,
+    "Max": 12
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Rnd/Smoke_Long_Purple.png",
+    "UVOption": "RandomFlipUV",
+    "Animation": {
+      "0": {
+        "Opacity": 1,
+        "Scale": {
+          "X": {
+            "Min": 0.1,
+            "Max": 0.1
+          },
+          "Y": {
+            "Min": 0.1,
+            "Max": 0.1
+          }
+        }
+      },
+      "100": {
+        "Opacity": 0,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1,
+            "Max": 1
+          }
+        }
+      },
+      "30": {
+        "Scale": {
+          "X": {
+            "Min": 0.5,
+            "Max": 0.5
+          },
+          "Y": {
+            "Min": 0.5,
+            "Max": 0.5
+          }
+        }
+      },
+      "60": {
+        "Scale": {
+          "X": {
+            "Min": 0.7,
+            "Max": 0.7
+          },
+          "Y": {
+            "Min": 0.7,
+            "Max": 0.7
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 1,
+      "FrameIndex": {
+        "Max": 15
+      },
+      "Scale": {
+        "X": {
+          "Min": 2,
+          "Max": 5
+        },
+        "Y": {
+          "Min": 2,
+          "Max": 5
+        }
+      },
+      "Rotation": {
+        "Z": {
+          "Max": 360
+        },
+        "Y": {
+          "Max": 360
+        },
+        "X": {
+          "Max": 360
+        }
+      },
+      "Color": "#af6adc"
+    },
+    "FrameSize": {
+      "Width": 64,
+      "Height": 64
+    }
+  },
+  "LifeSpan": 2.5,
+  "SpawnBurst": true,
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 4,
+      "Max": 7
+    },
+    "Yaw": {
+      "Min": 145,
+      "Max": 235
+    },
+    "Pitch": {
+      "Min": -10,
+      "Max": 10
+    }
+  },
+  "Attractors": [
+    {
+      "Radius": 0,
+      "RadialAcceleration": 10,
+      "RadialTangentAcceleration": 2,
+      "LinearAcceleration": {
+        "X": 0,
+        "Z": 0
+      }
+    }
+  ]
+}

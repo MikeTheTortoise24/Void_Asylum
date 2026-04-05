@@ -1,0 +1,48 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Parallel",
+      "Interactions": [
+        {
+          "Interactions": [
+            {
+              "Type": "Projectile",
+              "Config": "Voidbreaker_Arena_Spiral_Base"
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Projectile",
+              "Config": "Voidbreaker_Arena_Spiral_Base120"
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Projectile",
+              "Config": "Voidbreaker_Arena_Spiral_Base240"
+            }
+          ]
+        }
+      ],
+      "Effects": {
+        "Type": "Simple",
+        "Effects": {
+          "WorldSoundEventId": "SFX_Eye_Void_Attack_Blast"
+        }
+      }
+    },
+    {
+      "Type": "RotateSelf",
+      "RotationY": 15
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 0.05
+    }
+  ]
+}

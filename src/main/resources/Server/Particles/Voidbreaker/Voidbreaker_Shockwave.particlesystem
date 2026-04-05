@@ -1,0 +1,23 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Ground_Slam_Shockwave",
+      "PositionOffset": {
+        "Y": 0.4
+      }
+    },
+    {
+      "SpawnerId": "Ground_Slam_Shockwave",
+      "PositionOffset": {
+        "Y": 0.8
+      }
+    },
+    {
+      "SpawnerId": "Ground_Slam_Shockwave",
+      "PositionOffset": {
+        "Y": 1.2
+      }
+    }
+  ],
+  "IsImportant": false
+}

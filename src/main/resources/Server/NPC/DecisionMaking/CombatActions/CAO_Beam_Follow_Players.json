@@ -1,0 +1,69 @@
+{
+  "Type": "Ability",
+  "Description": "Beam on player that happens every X seconds",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "XRange": [
+          0,
+          48
+        ],
+        "ResponseCurve": "Linear"
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Curve": {
+        "Type": "Switch",
+        "InitialState": 1,
+        "FinalState": 0,
+        "SwitchPoint": 4200
+      },
+      "Stat": "Health"
+    }
+  ],
+  "Target": "Hostile",
+  "AttackDistanceRange": [
+    0,
+    50
+  ],
+  "Ability": {
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "RunTime": 2.0,
+        "Effects": {
+          "MovementEffects": {
+            "DisableAll": true
+          },
+          "WorldSoundEventId": "Adathan_Void_Dragon_Roar"
+        }
+      },
+      {
+        "Type": "Repeat",
+        "Repeat": 7,
+        "ForkInteractions": {
+          "Interactions": [
+            {
+              "Type": "ExecuteInteractionAtPlayer",
+              "RootInteractionName": "Root_Adathan_Void_Dragon_Targeted_Beam",
+              "EntityNameToSpawn": "Boss_Marker",
+              "Players": 2,
+              "Range": 100
+            },
+            {
+              "Type": "Simple",
+              "RunTime": 0.75
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "PostExecuteDistanceRange": [
+    7,
+    8
+  ],
+  "AbilityType": "Primary"
+}

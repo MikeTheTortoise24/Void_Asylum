@@ -1,0 +1,13 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Targeted_Beam_Circle_Swirl"
+    },
+    {
+      "SpawnerId": "Targeted_Beam_Ring"
+    },
+    {
+      "SpawnerId": "Targeted_Beam_Beam"
+    }
+  ]
+}

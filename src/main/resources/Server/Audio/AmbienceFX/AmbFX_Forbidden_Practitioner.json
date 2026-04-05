@@ -1,0 +1,14 @@
+{
+  "AmbientBed": {
+    "Track": "Sounds/00a1_Silence_Stereo.ogg",
+    "Volume": -1
+  },
+  "Conditions": {
+    "EnvironmentIds": [
+      "Env_Forbidden_Practitioner"
+    ],
+    "SunLightLevel": {
+      "Max": 50
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "Type": "Selector",
+  "HitEntityRules": [
+    {
+      "Matchers": [
+        {
+          "Type": "Player"
+        }
+      ],
+      "Next": {
+        "Interactions": [
+          {
+            "Type": "ApplyEffect",
+            "EffectId": "Adathan_Void_DragonFall_Immunity",
+            "Entity": "Target"
+          },
+          "Adathan_Forbidden_Practitioner_Sky_Projectile_Explosion_Damage"
+        ]
+      }
+    }
+  ],
+  "Selector": {
+    "Id": "AOECircle",
+    "Range": 7
+  },
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "Magic_Hit",
+        "TargetEntityPart": "Entity",
+        "Scale": 10,
+        "DetachedFromModel": true,
+        "PositionOffset": {
+          "X": -10,
+          "Y": -10,
+          "Z": -2
+        }
+      }
+    ],
+    "WorldSoundEventId": "SFX_Forbidden_Practitioner_Sky_Projectile_Explode"
+  },
+  "Next": {
+    "Type": "Simple",
+    "RunTime": 1
+  }
+}

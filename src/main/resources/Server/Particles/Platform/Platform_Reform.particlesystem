@@ -1,0 +1,8 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Platform_Reform_Sphere"
+    }
+  ],
+  "CullDistance": 1000
+}

@@ -1,0 +1,15 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Adathan_Warden/SFX_Warden_Phase2_Enough.ogg"
+      ],
+      "Volume": 0,
+      "Probability": 100
+    }
+  ],
+  "PreventSoundInterruption": true,
+  "Parent": "SFX_Attn_VeryLoud",
+  "MaxDistance": 40,
+  "Volume": 10
+}

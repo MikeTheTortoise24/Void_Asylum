@@ -1,0 +1,20 @@
+{
+  "PreventSoundInterruption": true,
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Adathan_Void_Dragon/SFX_Dragon_Spear_Enter.ogg"
+      ],
+      "Volume": 6.0,
+      "RandomSettings": {
+        "MinVolume": -2,
+        "MaxPitch": 0,
+        "MinPitch": -1
+      }
+    }
+  ],
+  "Volume": -3,
+  "Parent": "SFX_Attn_Loud",
+  "Pitch": 0,
+  "MaxDistance": 100
+}

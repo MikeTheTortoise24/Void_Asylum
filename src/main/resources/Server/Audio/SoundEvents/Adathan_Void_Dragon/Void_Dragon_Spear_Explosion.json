@@ -1,0 +1,20 @@
+{
+  "PreventSoundInterruption": true,
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Adathan_Void_Dragon/SFX_Dragon_Spear_Explosion.ogg"
+      ],
+      "Volume": 6.0,
+      "RandomSettings": {
+        "MinVolume": -2,
+        "MaxPitch": 1,
+        "MinPitch": -1
+      }
+    }
+  ],
+  "Volume": 10,
+  "Parent": "SFX_Attn_Loud",
+  "Pitch": 0,
+  "MaxDistance": 100
+}
