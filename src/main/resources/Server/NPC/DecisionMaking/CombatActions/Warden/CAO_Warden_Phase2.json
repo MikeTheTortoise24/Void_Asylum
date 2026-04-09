@@ -3,14 +3,14 @@
   "Description": "Phase 2 change and cutscene.",
   "Conditions": [
     {
-      "Type": "OwnStatAbsolute",
-      "Stat": "Health",
+      "Type": "OwnStatPercentageAdathan",
       "Curve": {
         "Type": "Switch",
-        "SwitchPoint": 2500,
+        "SwitchPoint": 50,
         "InitialState": 1,
         "FinalState": 0
-      }
+      },
+      "Stat": "Health"
     },
     {
       "Type": "SelfHasEffect",

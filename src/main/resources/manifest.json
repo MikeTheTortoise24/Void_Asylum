@@ -1,8 +1,8 @@
 {
   "Group": "Adathan",
   "Name": "Adathans_Void_Asylum",
-  "Version": "1.0.0",
-  "Description": "",
+  "Version": "1.0.3",
+  "Description": "Void Asylum raid. Four custom and difficult bosses in its own instance.",
   "Authors": [
     {
       "Name": "Adathan",
@@ -13,7 +13,7 @@
   "Website": "",
   "ServerVersion": "2026.03.26-89796e57b",
   "Dependencies": {
-    "Adathan:AdathansBossLibrary": ""
+    "Adathan:AdathansBossLibrary": ">=1.0.2"
   },
   "OptionalDependencies": {},
   "LoadBefore": {},

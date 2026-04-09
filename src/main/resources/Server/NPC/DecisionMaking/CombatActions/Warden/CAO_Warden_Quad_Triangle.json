@@ -21,14 +21,14 @@
       }
     },
     {
-      "Type": "OwnStatAbsolute",
-      "Stat": "Health",
+      "Type": "OwnStatPercentageAdathan",
       "Curve": {
         "Type": "Switch",
-        "SwitchPoint": 2500,
+        "SwitchPoint": 50,
         "InitialState": 0,
         "FinalState": 1
-      }
+      },
+      "Stat": "Health"
     }
   ],
   "Target": "Hostile",

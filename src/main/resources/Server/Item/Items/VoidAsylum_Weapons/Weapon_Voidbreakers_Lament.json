@@ -7,9 +7,9 @@
   ],
   "Quality": "Legendary",
   "ItemLevel": 40,
-  "PlayerAnimationsId": "Longsword",
+  "PlayerAnimationsId": "Battleaxe",
   "Interactions": {
-    "Primary": "Longsword_Attack",
+    "Primary": "Root_Weapon_Battleaxe_Primary",
     "Secondary": {
       "Interactions": [
         "Voidbreakers_Lament_Entry"
@@ -17,101 +17,89 @@
     }
   },
   "InteractionVars": {
-    "Longsword_Swing_Left_Effect": {
+    "Swing_Down_Damage": {
       "Interactions": [
         {
-          "Parent": "Longsword_Swing_Left_Effect",
-          "Effects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Swing"
-          }
-        }
-      ]
-    },
-    "Longsword_Swing_Left_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Longsword_Swing_Left_Damage",
-          "DamageCalculator": {
-            "Type": "Absolute",
-            "BaseDamage": {
-              "Physical": 31
-            },
-            "RandomPercentageModifier": 0.15
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Impact"
-          }
-        }
-      ]
-    },
-    "Longsword_Swing_Right_Effect": {
-      "Interactions": [
-        {
-          "Parent": "Longsword_Swing_Left_Effect",
-          "Effects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Swing"
-          }
-        }
-      ]
-    },
-    "Longsword_Swing_Right_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Longsword_Swing_Right_Damage",
-          "DamageCalculator": {
-            "Type": "Absolute",
-            "BaseDamage": {
-              "Physical": 31
-            },
-            "RandomPercentageModifier": 0.15
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Impact"
-          }
-        }
-      ]
-    },
-    "Longsword_Swing_Up_Left_Effect": {
-      "Interactions": [
-        {
-          "Parent": "Longsword_Swing_Left_Effect",
-          "Effects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Swing"
-          }
-        }
-      ]
-    },
-    "Longsword_Swing_Up_Left_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Longsword_Swing_Up_Left_Damage",
-          "DamageCalculator": {
-            "Type": "Absolute",
-            "BaseDamage": {
-              "Physical": 31
-            },
-            "RandomPercentageModifier": 0.15
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Impact"
-          }
-        }
-      ]
-    },
-    "Longsword_Stab_Charged_Effect": "Longsword_Stab_Charged_Effect",
-    "Longsword_Stab_Charged_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Longsword_Stab_Charged_Damage",
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 39
-            },
-            "Type": "Absolute",
-            "RandomPercentageModifier": 0.15
+              "Physical": 58
+            }
           },
           "DamageEffects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Impact"
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 35
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Downstrike_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Downstrike_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 62
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Signature_Whirlwind_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Signature_Whirlwind_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 23
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
           }
         }
       ]
@@ -139,7 +127,7 @@
       "Weapon"
     ],
     "Family": [
-      "Longsword"
+      "Battleaxe"
     ]
   },
   "Weapon": {},

@@ -22,7 +22,7 @@ public class VoidAsylum extends JavaPlugin {
     @Override
     protected void setup() {
         this.getLogger().atInfo().log("[VoidAsylum] Starting Plugin!");
-        new HStats("HStats_Code", this.getManifest().getVersion().toString());
+        new HStats("a1bbb02e-a7fb-4968-b3ec-cf0eb4f945cb", this.getManifest().getVersion().toString());
         Interaction.CODEC.register("SetupVoidAsylum", SetupVoidAsylum.class, SetupVoidAsylum.CODEC);
         SetupVoidAsylum voidAsylumFunctions = new SetupVoidAsylum();
         this.getEntityStoreRegistry().registerSystem(new AsylumDeathSystem(bossNames, voidAsylumFunctions));

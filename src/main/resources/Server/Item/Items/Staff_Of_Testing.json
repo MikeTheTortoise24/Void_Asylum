@@ -64,18 +64,6 @@
   "Weapon": {},
   "ItemSoundSetId": "ISS_Weapons_Wood",
   "Interactions": {
-    "Primary": {
-      "Interactions": [
-        {
-          "Type": "Simple",
-          "RunTime": 0.1
-        },
-        {
-          "Type": "SetupVoidAsylum",
-          "FightNumber": 4
-        }
-      ]
-    },
     "Secondary": {
       "Interactions": [
         {
